@@ -1,0 +1,10 @@
+== [1/7] natural_gfc =================
+== [2/7] invalidation (file vs contract) ==
+== [3/7] deletion-ratio recovery =======
+== [4/7] coverage sensitivity ==========
+== [5/7] contract vs file ==============
+== [6/7] ablation =======================
+== [7/7] cost ===========================
+
+[deterministic] all experiments done in 120.7s
+[summary] wrote results/summary.json

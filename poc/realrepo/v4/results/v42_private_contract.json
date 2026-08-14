@@ -1,0 +1,13 @@
+{
+  "strategy": "PrivateContract+AssertionTop1+EarlyStop",
+  "detection_rate": 0.8214,
+  "avg_relative_cost": 0.2257,
+  "avg_test_count": 1.71,
+  "per_repo": {
+    "tinydb": 1.0,
+    "cerberus": 0.6,
+    "boltons": 1.0,
+    "toolz": 0.8571,
+    "pyparsing": 1.0
+  }
+}

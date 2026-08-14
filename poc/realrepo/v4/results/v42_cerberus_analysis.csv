@@ -1,0 +1,8 @@
+strategy,cerberus_detection,cerberus_cost
+Local,0.35,
+IntegrationAll,1.0,
+v4.1 (AssertionTop1+EarlyStop),0.6,
+PrivateContract,0.6,
+LLMOnly,0.4,
+Hybrid,0.6,
+HybridTop2,0.6,

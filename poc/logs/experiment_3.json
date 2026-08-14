@@ -1,0 +1,26 @@
+[
+  {
+    "strategy": "all_downstream",
+    "missed_invalidations": 0,
+    "false_invalidations": 4,
+    "revalidation_count": 6,
+    "precision": 0.33,
+    "recall": 1.0
+  },
+  {
+    "strategy": "static",
+    "missed_invalidations": 0,
+    "false_invalidations": 2,
+    "revalidation_count": 4,
+    "precision": 0.5,
+    "recall": 1.0
+  },
+  {
+    "strategy": "change_aware",
+    "missed_invalidations": 0,
+    "false_invalidations": 0,
+    "revalidation_count": 2,
+    "precision": 1.0,
+    "recall": 1.0
+  }
+]

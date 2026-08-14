@@ -1,0 +1,186 @@
+{
+  "repo": "cerberus",
+  "config": "extended",
+  "edges": [
+    {
+      "source": "cerberus/__init__.py",
+      "target": "cerberus/platform.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import cerberus.platform"
+    },
+    {
+      "source": "cerberus/__init__.py",
+      "target": "cerberus/schema.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import cerberus.schema"
+    },
+    {
+      "source": "cerberus/__init__.py",
+      "target": "cerberus/utils.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import cerberus.utils"
+    },
+    {
+      "source": "cerberus/__init__.py",
+      "target": "cerberus/validator.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import cerberus.validator"
+    },
+    {
+      "source": "cerberus/errors.py",
+      "target": "cerberus/platform.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import cerberus.platform"
+    },
+    {
+      "source": "cerberus/errors.py",
+      "target": "cerberus/utils.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import cerberus.utils"
+    },
+    {
+      "source": "cerberus/schema.py",
+      "target": "cerberus/platform.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import cerberus.platform"
+    },
+    {
+      "source": "cerberus/schema.py",
+      "target": "cerberus/utils.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import cerberus.utils"
+    },
+    {
+      "source": "cerberus/utils.py",
+      "target": "cerberus/platform.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import cerberus.platform"
+    },
+    {
+      "source": "cerberus/utils.py",
+      "target": "cerberus/validator.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import cerberus.validator"
+    },
+    {
+      "source": "cerberus/validator.py",
+      "target": "cerberus/platform.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import cerberus.platform"
+    },
+    {
+      "source": "cerberus/validator.py",
+      "target": "cerberus/schema.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import cerberus.schema"
+    },
+    {
+      "source": "cerberus/validator.py",
+      "target": "cerberus/utils.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import cerberus.utils"
+    },
+    {
+      "source": "cerberus/validator.py",
+      "target": "testing_completion",
+      "relation_type": "ARTIFACT->COMPLETION",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "note": "oracle: C3_remove_allowed broke testing verify-set"
+    },
+    {
+      "source": "cerberus/validator.py",
+      "target": "agent_b_completion",
+      "relation_type": "ARTIFACT->COMPLETION",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "note": "oracle: C5_add_new_rule broke agent_b verify-set"
+    }
+  ]
+}

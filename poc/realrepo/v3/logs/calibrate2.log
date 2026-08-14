@@ -1,0 +1,4 @@
+[calibrate] LOCAL: 50 cases in 112.6s
+[calibrate] MODULE: 50 cases in 128.4s
+[calibrate] INTEGRATION: 50 cases in 246.2s
+instances: 288 (INTEGRATION 144 + LOCAL 144) | critical(GT-invalidate) edges: 75 | G* edges: INTEGRATION 67 LOCAL 33 | GFC by regime: {'LOCAL': 13, 'MODULE': 6, 'INTEGRATION': 4}

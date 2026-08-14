@@ -1,0 +1,536 @@
+{
+  "config": "base",
+  "repos": {
+    "tinydb": {
+      "verify_sets": {
+        "agent_a": [
+          "tests/test_queries.py"
+        ],
+        "agent_b": [
+          "tests/test_utils.py"
+        ],
+        "testing": [
+          "tests/test_operations.py"
+        ],
+        "oracle": [
+          "tests/test_tinydb.py",
+          "tests/test_tables.py"
+        ]
+      }
+    },
+    "cerberus": {
+      "verify_sets": {
+        "agent_a": [
+          "cerberus/tests/test_schema.py"
+        ],
+        "agent_b": [
+          "cerberus/tests/test_utils.py"
+        ],
+        "testing": [
+          "cerberus/tests/test_normalization.py"
+        ],
+        "oracle": [
+          "cerberus/tests/test_validation.py"
+        ]
+      }
+    },
+    "boltons": {
+      "verify_sets": {
+        "agent_a": [
+          "tests/test_typeutils.py"
+        ],
+        "agent_b": [
+          "tests/test_iterutils.py"
+        ],
+        "testing": [
+          "tests/test_listutils.py"
+        ],
+        "oracle": [
+          "tests/"
+        ]
+      }
+    }
+  },
+  "cases": [
+    {
+      "case": "T1_impl_internal",
+      "repo": "tinydb",
+      "producer": "tinydb/table.py",
+      "note": "Table.all() rewritten equivalently",
+      "expected_ct": "NON_SEMANTIC",
+      "classified_ct": "POTENTIALLY_BREAKING",
+      "results": {
+        "agent_a": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.537
+        },
+        "agent_b": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.417
+        },
+        "testing": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.532
+        },
+        "oracle": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.736
+        }
+      }
+    },
+    {
+      "case": "T2_all_breaks",
+      "repo": "tinydb",
+      "producer": "tinydb/table.py",
+      "note": "Table.all() return type list->dict",
+      "expected_ct": "BREAKING",
+      "classified_ct": "POTENTIALLY_BREAKING",
+      "results": {
+        "agent_a": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.467
+        },
+        "agent_b": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.411
+        },
+        "testing": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.503
+        },
+        "oracle": {
+          "result": "FAIL",
+          "tests_failed": 15,
+          "duration_s": 0.849
+        }
+      }
+    },
+    {
+      "case": "T3_insert_sig",
+      "repo": "tinydb",
+      "producer": "tinydb/table.py",
+      "note": "insert() gains required kwarg",
+      "expected_ct": "BREAKING",
+      "classified_ct": "BREAKING",
+      "results": {
+        "agent_a": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.446
+        },
+        "agent_b": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.402
+        },
+        "testing": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.477
+        },
+        "oracle": {
+          "result": "FAIL",
+          "tests_failed": 49,
+          "duration_s": 1.059
+        }
+      }
+    },
+    {
+      "case": "T4_version_cfg",
+      "repo": "tinydb",
+      "producer": "tinydb/version.py",
+      "note": "__version__ bumped, no API change",
+      "expected_ct": "COMPATIBLE",
+      "classified_ct": "POTENTIALLY_BREAKING",
+      "results": {
+        "agent_a": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.453
+        },
+        "agent_b": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.412
+        },
+        "testing": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.492
+        },
+        "oracle": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.721
+        }
+      }
+    },
+    {
+      "case": "T5_add_method",
+      "repo": "tinydb",
+      "producer": "tinydb/table.py",
+      "note": "additive public method",
+      "expected_ct": "COMPATIBLE",
+      "classified_ct": "COMPATIBLE",
+      "results": {
+        "agent_a": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.455
+        },
+        "agent_b": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.416
+        },
+        "testing": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.479
+        },
+        "oracle": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.731
+        }
+      }
+    },
+    {
+      "case": "T6_doc_required_attr",
+      "repo": "tinydb",
+      "producer": "tinydb/table.py",
+      "note": "Document constructor requires created_by",
+      "expected_ct": "BREAKING",
+      "classified_ct": "BREAKING",
+      "results": {
+        "agent_a": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.45
+        },
+        "agent_b": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.416
+        },
+        "testing": {
+          "result": "FAIL",
+          "tests_failed": 14,
+          "duration_s": 0.564
+        },
+        "oracle": {
+          "result": "FAIL",
+          "tests_failed": 86,
+          "duration_s": 1.807
+        }
+      }
+    },
+    {
+      "case": "C1_utils_internal",
+      "repo": "cerberus",
+      "producer": "cerberus/utils.py",
+      "note": "internal tuple helper rewritten",
+      "expected_ct": "NON_SEMANTIC",
+      "classified_ct": "POTENTIALLY_BREAKING",
+      "results": {
+        "agent_a": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.221
+        },
+        "agent_b": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.153
+        },
+        "testing": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.218
+        },
+        "oracle": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.39
+        }
+      }
+    },
+    {
+      "case": "C2_validate_sig",
+      "repo": "cerberus",
+      "producer": "cerberus/validator.py",
+      "note": "validate() adds required kwarg",
+      "expected_ct": "BREAKING",
+      "classified_ct": "COMPATIBLE",
+      "results": {
+        "agent_a": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.171
+        },
+        "agent_b": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.157
+        },
+        "testing": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.24
+        },
+        "oracle": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.4
+        }
+      }
+    },
+    {
+      "case": "C3_remove_allowed",
+      "repo": "cerberus",
+      "producer": "cerberus/validator.py",
+      "note": "allowed rule removed",
+      "expected_ct": "BREAKING",
+      "classified_ct": "POTENTIALLY_BREAKING",
+      "results": {
+        "agent_a": {
+          "result": "FAIL",
+          "tests_failed": 0,
+          "duration_s": 0.287
+        },
+        "agent_b": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.172
+        },
+        "testing": {
+          "result": "FAIL",
+          "tests_failed": 35,
+          "duration_s": 1.198
+        },
+        "oracle": {
+          "result": "FAIL",
+          "tests_failed": 96,
+          "duration_s": 3.73
+        }
+      }
+    },
+    {
+      "case": "C4_platform_const",
+      "repo": "cerberus",
+      "producer": "cerberus/platform.py",
+      "note": "int alias widened",
+      "expected_ct": "COMPATIBLE",
+      "classified_ct": "POTENTIALLY_BREAKING",
+      "results": {
+        "agent_a": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.171
+        },
+        "agent_b": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.166
+        },
+        "testing": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.23
+        },
+        "oracle": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.393
+        }
+      }
+    },
+    {
+      "case": "C5_add_new_rule",
+      "repo": "cerberus",
+      "producer": "cerberus/validator.py",
+      "note": "additive new validation rule",
+      "expected_ct": "COMPATIBLE",
+      "classified_ct": "POTENTIALLY_BREAKING",
+      "results": {
+        "agent_a": {
+          "result": "FAIL",
+          "tests_failed": -1,
+          "duration_s": 0.169
+        },
+        "agent_b": {
+          "result": "FAIL",
+          "tests_failed": -1,
+          "duration_s": 0.176
+        },
+        "testing": {
+          "result": "FAIL",
+          "tests_failed": -1,
+          "duration_s": 0.171
+        },
+        "oracle": {
+          "result": "FAIL",
+          "tests_failed": -1,
+          "duration_s": 0.171
+        }
+      }
+    },
+    {
+      "case": "B1_sentinel_internal",
+      "repo": "boltons",
+      "producer": "boltons/typeutils.py",
+      "note": "sentinel __bool__ comment+impl",
+      "expected_ct": "NON_SEMANTIC",
+      "classified_ct": "NON_SEMANTIC",
+      "results": {
+        "agent_a": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.153
+        },
+        "agent_b": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.274
+        },
+        "testing": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.228
+        },
+        "oracle": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 2.203
+        }
+      }
+    },
+    {
+      "case": "B2_sentinel_required",
+      "repo": "boltons",
+      "producer": "boltons/typeutils.py",
+      "note": "make_sentinel requires name",
+      "expected_ct": "BREAKING",
+      "classified_ct": "BREAKING",
+      "results": {
+        "agent_a": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.144
+        },
+        "agent_b": {
+          "result": "FAIL",
+          "tests_failed": -1,
+          "duration_s": 0.22
+        },
+        "testing": {
+          "result": "FAIL",
+          "tests_failed": -1,
+          "duration_s": 0.204
+        },
+        "oracle": {
+          "result": "FAIL",
+          "tests_failed": -1,
+          "duration_s": 0.609
+        }
+      }
+    },
+    {
+      "case": "B3_sentinel_optional",
+      "repo": "boltons",
+      "producer": "boltons/typeutils.py",
+      "note": "additive kwarg",
+      "expected_ct": "COMPATIBLE",
+      "classified_ct": "COMPATIBLE",
+      "results": {
+        "agent_a": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.131
+        },
+        "agent_b": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.247
+        },
+        "testing": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.225
+        },
+        "oracle": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 2.089
+        }
+      }
+    },
+    {
+      "case": "B4_rename_isiterable",
+      "repo": "boltons",
+      "producer": "boltons/iterutils.py",
+      "note": "is_iterable renamed",
+      "expected_ct": "BREAKING",
+      "classified_ct": "BREAKING",
+      "results": {
+        "agent_a": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.145
+        },
+        "agent_b": {
+          "result": "FAIL",
+          "tests_failed": 4,
+          "duration_s": 0.306
+        },
+        "testing": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.236
+        },
+        "oracle": {
+          "result": "FAIL",
+          "tests_failed": 4,
+          "duration_s": 2.237
+        }
+      }
+    },
+    {
+      "case": "B5_remove_chunked",
+      "repo": "boltons",
+      "producer": "boltons/iterutils.py",
+      "note": "chunked renamed",
+      "expected_ct": "BREAKING",
+      "classified_ct": "BREAKING",
+      "results": {
+        "agent_a": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.137
+        },
+        "agent_b": {
+          "result": "FAIL",
+          "tests_failed": 1,
+          "duration_s": 0.261
+        },
+        "testing": {
+          "result": "PASS",
+          "tests_failed": 0,
+          "duration_s": 0.22
+        },
+        "oracle": {
+          "result": "FAIL",
+          "tests_failed": 1,
+          "duration_s": 2.116
+        }
+      }
+    }
+  ]
+}

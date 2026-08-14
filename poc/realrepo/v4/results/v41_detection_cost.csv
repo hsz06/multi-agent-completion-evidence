@@ -1,0 +1,9 @@
+strategy,detection_rate,vrr,avg_test_count,total_runtime,avg_relative_cost,early_stop_hits
+Local,0.2857,0.2857,1.0,15.399,0.1117,0
+CoverageOnly@0.8,0.6607,0.6607,2.05,33.205,0.234,0
+CoverageOnly@1.0,0.8214,0.8214,2.77,51.385,0.3631,0
+AssertionAware@0.8,0.6607,0.6607,2.05,33.205,0.234,0
+AssertionAware@1.0,0.8214,0.8214,2.77,51.385,0.3631,0
+AssertionTop1+EarlyStop,0.8214,0.8214,2.0,38.506,0.2758,0
+AssertionAware+EarlyStop,0.8214,0.8214,2.23,40.435,0.2858,16
+IntegrationAll,1.0,1.0,8.07,140.024,1.0,0

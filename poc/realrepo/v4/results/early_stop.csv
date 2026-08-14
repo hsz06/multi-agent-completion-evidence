@@ -1,0 +1,4 @@
+strategy,existing_detects_cases,still_expanded,false_expansion_rate,saved_tests,saved_runtime
+CoverageOnly@0.8,16,16,1.0,0,0.0
+AssertionAware@1.0,16,16,1.0,0,0.0
+AssertionAware+EarlyStop,16,0,0.0,30,10.95

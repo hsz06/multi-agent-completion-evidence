@@ -1,0 +1,2884 @@
+{
+  "instances": [
+    {
+      "instance_id": "Tc01::dev_a_completion",
+      "repo": "tinydb",
+      "producer_task": "task-Tc01",
+      "producer_artifact": "tinydb/table.py",
+      "producer_contract": "tinydb/table.py::FUNCTION_SIGNATURE::Table.name",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Tc01::dev_a_completion",
+      "change": {
+        "case_id": "Tc01",
+        "symbol": "Table.name",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc01::dev_b_completion",
+      "repo": "tinydb",
+      "producer_task": "task-Tc01",
+      "producer_artifact": "tinydb/table.py",
+      "producer_contract": "tinydb/table.py::FUNCTION_SIGNATURE::Table.name",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Tc01::dev_b_completion",
+      "change": {
+        "case_id": "Tc01",
+        "symbol": "Table.name",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc01::testing_completion",
+      "repo": "tinydb",
+      "producer_task": "task-Tc01",
+      "producer_artifact": "tinydb/table.py",
+      "producer_contract": "tinydb/table.py::FUNCTION_SIGNATURE::Table.name",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Tc01::testing_completion",
+      "change": {
+        "case_id": "Tc01",
+        "symbol": "Table.name",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc02::dev_a_completion",
+      "repo": "tinydb",
+      "producer_task": "task-Tc02",
+      "producer_artifact": "tinydb/table.py",
+      "producer_contract": "tinydb/table.py::FUNCTION_SIGNATURE::Table.storage",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Tc02::dev_a_completion",
+      "change": {
+        "case_id": "Tc02",
+        "symbol": "Table.storage",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc02::dev_b_completion",
+      "repo": "tinydb",
+      "producer_task": "task-Tc02",
+      "producer_artifact": "tinydb/table.py",
+      "producer_contract": "tinydb/table.py::FUNCTION_SIGNATURE::Table.storage",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Tc02::dev_b_completion",
+      "change": {
+        "case_id": "Tc02",
+        "symbol": "Table.storage",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc02::testing_completion",
+      "repo": "tinydb",
+      "producer_task": "task-Tc02",
+      "producer_artifact": "tinydb/table.py",
+      "producer_contract": "tinydb/table.py::FUNCTION_SIGNATURE::Table.storage",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Tc02::testing_completion",
+      "change": {
+        "case_id": "Tc02",
+        "symbol": "Table.storage",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc03::dev_a_completion",
+      "repo": "tinydb",
+      "producer_task": "task-Tc03",
+      "producer_artifact": "tinydb/table.py",
+      "producer_contract": "tinydb/table.py::FUNCTION_SIGNATURE::Table.insert",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Tc03::dev_a_completion",
+      "change": {
+        "case_id": "Tc03",
+        "symbol": "Table.insert",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Tc03::dev_b_completion",
+      "repo": "tinydb",
+      "producer_task": "task-Tc03",
+      "producer_artifact": "tinydb/table.py",
+      "producer_contract": "tinydb/table.py::FUNCTION_SIGNATURE::Table.insert",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Tc03::dev_b_completion",
+      "change": {
+        "case_id": "Tc03",
+        "symbol": "Table.insert",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Tc03::testing_completion",
+      "repo": "tinydb",
+      "producer_task": "task-Tc03",
+      "producer_artifact": "tinydb/table.py",
+      "producer_contract": "tinydb/table.py::FUNCTION_SIGNATURE::Table.insert",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Tc03::testing_completion",
+      "change": {
+        "case_id": "Tc03",
+        "symbol": "Table.insert",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Tc04::dev_a_completion",
+      "repo": "tinydb",
+      "producer_task": "task-Tc04",
+      "producer_artifact": "tinydb/table.py",
+      "producer_contract": "tinydb/table.py::FUNCTION_SIGNATURE::Table.insert_multiple",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Tc04::dev_a_completion",
+      "change": {
+        "case_id": "Tc04",
+        "symbol": "Table.insert_multiple",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Tc04::dev_b_completion",
+      "repo": "tinydb",
+      "producer_task": "task-Tc04",
+      "producer_artifact": "tinydb/table.py",
+      "producer_contract": "tinydb/table.py::FUNCTION_SIGNATURE::Table.insert_multiple",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Tc04::dev_b_completion",
+      "change": {
+        "case_id": "Tc04",
+        "symbol": "Table.insert_multiple",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Tc04::testing_completion",
+      "repo": "tinydb",
+      "producer_task": "task-Tc04",
+      "producer_artifact": "tinydb/table.py",
+      "producer_contract": "tinydb/table.py::FUNCTION_SIGNATURE::Table.insert_multiple",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Tc04::testing_completion",
+      "change": {
+        "case_id": "Tc04",
+        "symbol": "Table.insert_multiple",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Tc05::dev_a_completion",
+      "repo": "tinydb",
+      "producer_task": "task-Tc05",
+      "producer_artifact": "tinydb/table.py",
+      "producer_contract": "tinydb/table.py::FUNCTION_SIGNATURE::Table.all",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Tc05::dev_a_completion",
+      "change": {
+        "case_id": "Tc05",
+        "symbol": "Table.all",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "tinydb/table.py::FUNCTION_SIGNATURE::Table.all->dev_a_completion",
+      "gt_should_invalidate": true,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc05::dev_b_completion",
+      "repo": "tinydb",
+      "producer_task": "task-Tc05",
+      "producer_artifact": "tinydb/table.py",
+      "producer_contract": "tinydb/table.py::FUNCTION_SIGNATURE::Table.all",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Tc05::dev_b_completion",
+      "change": {
+        "case_id": "Tc05",
+        "symbol": "Table.all",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc05::testing_completion",
+      "repo": "tinydb",
+      "producer_task": "task-Tc05",
+      "producer_artifact": "tinydb/table.py",
+      "producer_contract": "tinydb/table.py::FUNCTION_SIGNATURE::Table.all",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Tc05::testing_completion",
+      "change": {
+        "case_id": "Tc05",
+        "symbol": "Table.all",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc06::dev_a_completion",
+      "repo": "tinydb",
+      "producer_task": "task-Tc06",
+      "producer_artifact": "tinydb/table.py",
+      "producer_contract": "tinydb/table.py::FUNCTION_SIGNATURE::Table.search",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Tc06::dev_a_completion",
+      "change": {
+        "case_id": "Tc06",
+        "symbol": "Table.search",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc06::dev_b_completion",
+      "repo": "tinydb",
+      "producer_task": "task-Tc06",
+      "producer_artifact": "tinydb/table.py",
+      "producer_contract": "tinydb/table.py::FUNCTION_SIGNATURE::Table.search",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Tc06::dev_b_completion",
+      "change": {
+        "case_id": "Tc06",
+        "symbol": "Table.search",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc06::testing_completion",
+      "repo": "tinydb",
+      "producer_task": "task-Tc06",
+      "producer_artifact": "tinydb/table.py",
+      "producer_contract": "tinydb/table.py::FUNCTION_SIGNATURE::Table.search",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Tc06::testing_completion",
+      "change": {
+        "case_id": "Tc06",
+        "symbol": "Table.search",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc08::dev_a_completion",
+      "repo": "tinydb",
+      "producer_task": "task-Tc08",
+      "producer_artifact": "tinydb/table.py",
+      "producer_contract": "tinydb/table.py::FUNCTION_SIGNATURE::Table.contains",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Tc08::dev_a_completion",
+      "change": {
+        "case_id": "Tc08",
+        "symbol": "Table.contains",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc08::dev_b_completion",
+      "repo": "tinydb",
+      "producer_task": "task-Tc08",
+      "producer_artifact": "tinydb/table.py",
+      "producer_contract": "tinydb/table.py::FUNCTION_SIGNATURE::Table.contains",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Tc08::dev_b_completion",
+      "change": {
+        "case_id": "Tc08",
+        "symbol": "Table.contains",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc08::testing_completion",
+      "repo": "tinydb",
+      "producer_task": "task-Tc08",
+      "producer_artifact": "tinydb/table.py",
+      "producer_contract": "tinydb/table.py::FUNCTION_SIGNATURE::Table.contains",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Tc08::testing_completion",
+      "change": {
+        "case_id": "Tc08",
+        "symbol": "Table.contains",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc09::dev_a_completion",
+      "repo": "tinydb",
+      "producer_task": "task-Tc09",
+      "producer_artifact": "tinydb/table.py",
+      "producer_contract": "tinydb/table.py::FUNCTION_SIGNATURE::Table.update",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Tc09::dev_a_completion",
+      "change": {
+        "case_id": "Tc09",
+        "symbol": "Table.update",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc09::dev_b_completion",
+      "repo": "tinydb",
+      "producer_task": "task-Tc09",
+      "producer_artifact": "tinydb/table.py",
+      "producer_contract": "tinydb/table.py::FUNCTION_SIGNATURE::Table.update",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Tc09::dev_b_completion",
+      "change": {
+        "case_id": "Tc09",
+        "symbol": "Table.update",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc09::testing_completion",
+      "repo": "tinydb",
+      "producer_task": "task-Tc09",
+      "producer_artifact": "tinydb/table.py",
+      "producer_contract": "tinydb/table.py::FUNCTION_SIGNATURE::Table.update",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Tc09::testing_completion",
+      "change": {
+        "case_id": "Tc09",
+        "symbol": "Table.update",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "tinydb/table.py::FUNCTION_SIGNATURE::Table.update->testing_completion",
+      "gt_should_invalidate": true,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc10::dev_a_completion",
+      "repo": "tinydb",
+      "producer_task": "task-Tc10",
+      "producer_artifact": "tinydb/table.py",
+      "producer_contract": "tinydb/table.py::FUNCTION_SIGNATURE::Table.update_multiple",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Tc10::dev_a_completion",
+      "change": {
+        "case_id": "Tc10",
+        "symbol": "Table.update_multiple",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "tinydb/table.py::FUNCTION_SIGNATURE::Table.update_multiple->dev_a_completion",
+      "gt_should_invalidate": true,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc10::dev_b_completion",
+      "repo": "tinydb",
+      "producer_task": "task-Tc10",
+      "producer_artifact": "tinydb/table.py",
+      "producer_contract": "tinydb/table.py::FUNCTION_SIGNATURE::Table.update_multiple",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Tc10::dev_b_completion",
+      "change": {
+        "case_id": "Tc10",
+        "symbol": "Table.update_multiple",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "tinydb/table.py::FUNCTION_SIGNATURE::Table.update_multiple->dev_b_completion",
+      "gt_should_invalidate": true,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc10::testing_completion",
+      "repo": "tinydb",
+      "producer_task": "task-Tc10",
+      "producer_artifact": "tinydb/table.py",
+      "producer_contract": "tinydb/table.py::FUNCTION_SIGNATURE::Table.update_multiple",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Tc10::testing_completion",
+      "change": {
+        "case_id": "Tc10",
+        "symbol": "Table.update_multiple",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "tinydb/table.py::FUNCTION_SIGNATURE::Table.update_multiple->testing_completion",
+      "gt_should_invalidate": true,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Cc01::dev_a_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc01",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::dummy_for_rule_validation",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Cc01::dev_a_completion",
+      "change": {
+        "case_id": "Cc01",
+        "symbol": "dummy_for_rule_validation",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Cc01::dev_b_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc01",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::dummy_for_rule_validation",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Cc01::dev_b_completion",
+      "change": {
+        "case_id": "Cc01",
+        "symbol": "dummy_for_rule_validation",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Cc01::testing_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc01",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::dummy_for_rule_validation",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Cc01::testing_completion",
+      "change": {
+        "case_id": "Cc01",
+        "symbol": "dummy_for_rule_validation",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Cc02::dev_a_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc02",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.clear_caches",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Cc02::dev_a_completion",
+      "change": {
+        "case_id": "Cc02",
+        "symbol": "BareValidator.clear_caches",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Cc02::dev_b_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc02",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.clear_caches",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Cc02::dev_b_completion",
+      "change": {
+        "case_id": "Cc02",
+        "symbol": "BareValidator.clear_caches",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Cc02::testing_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc02",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.clear_caches",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Cc02::testing_completion",
+      "change": {
+        "case_id": "Cc02",
+        "symbol": "BareValidator.clear_caches",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Cc03::dev_a_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc03",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.allow_unknown",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Cc03::dev_a_completion",
+      "change": {
+        "case_id": "Cc03",
+        "symbol": "BareValidator.allow_unknown",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Cc03::dev_b_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc03",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.allow_unknown",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Cc03::dev_b_completion",
+      "change": {
+        "case_id": "Cc03",
+        "symbol": "BareValidator.allow_unknown",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.allow_unknown->dev_b_completion",
+      "gt_should_invalidate": true,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Cc03::testing_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc03",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.allow_unknown",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Cc03::testing_completion",
+      "change": {
+        "case_id": "Cc03",
+        "symbol": "BareValidator.allow_unknown",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.allow_unknown->testing_completion",
+      "gt_should_invalidate": true,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Cc04::dev_a_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc04",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.require_all",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Cc04::dev_a_completion",
+      "change": {
+        "case_id": "Cc04",
+        "symbol": "BareValidator.require_all",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Cc04::dev_b_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc04",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.require_all",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Cc04::dev_b_completion",
+      "change": {
+        "case_id": "Cc04",
+        "symbol": "BareValidator.require_all",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Cc04::testing_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc04",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.require_all",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Cc04::testing_completion",
+      "change": {
+        "case_id": "Cc04",
+        "symbol": "BareValidator.require_all",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Cc05::dev_a_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc05",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.errors",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Cc05::dev_a_completion",
+      "change": {
+        "case_id": "Cc05",
+        "symbol": "BareValidator.errors",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Cc05::dev_b_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc05",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.errors",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Cc05::dev_b_completion",
+      "change": {
+        "case_id": "Cc05",
+        "symbol": "BareValidator.errors",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.errors->dev_b_completion",
+      "gt_should_invalidate": true,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Cc05::testing_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc05",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.errors",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Cc05::testing_completion",
+      "change": {
+        "case_id": "Cc05",
+        "symbol": "BareValidator.errors",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Cc06::dev_a_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc06",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.ignore_none_values",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Cc06::dev_a_completion",
+      "change": {
+        "case_id": "Cc06",
+        "symbol": "BareValidator.ignore_none_values",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Cc06::dev_b_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc06",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.ignore_none_values",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Cc06::dev_b_completion",
+      "change": {
+        "case_id": "Cc06",
+        "symbol": "BareValidator.ignore_none_values",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Cc06::testing_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc06",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.ignore_none_values",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Cc06::testing_completion",
+      "change": {
+        "case_id": "Cc06",
+        "symbol": "BareValidator.ignore_none_values",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Cc07::dev_a_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc07",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.is_child",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Cc07::dev_a_completion",
+      "change": {
+        "case_id": "Cc07",
+        "symbol": "BareValidator.is_child",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Cc07::dev_b_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc07",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.is_child",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Cc07::dev_b_completion",
+      "change": {
+        "case_id": "Cc07",
+        "symbol": "BareValidator.is_child",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.is_child->dev_b_completion",
+      "gt_should_invalidate": true,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Cc07::testing_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc07",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.is_child",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Cc07::testing_completion",
+      "change": {
+        "case_id": "Cc07",
+        "symbol": "BareValidator.is_child",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.is_child->testing_completion",
+      "gt_should_invalidate": true,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Cc08::dev_a_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc08",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.purge_unknown",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Cc08::dev_a_completion",
+      "change": {
+        "case_id": "Cc08",
+        "symbol": "BareValidator.purge_unknown",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Cc08::dev_b_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc08",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.purge_unknown",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Cc08::dev_b_completion",
+      "change": {
+        "case_id": "Cc08",
+        "symbol": "BareValidator.purge_unknown",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Cc08::testing_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc08",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.purge_unknown",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Cc08::testing_completion",
+      "change": {
+        "case_id": "Cc08",
+        "symbol": "BareValidator.purge_unknown",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Cc09::dev_a_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc09",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.purge_readonly",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Cc09::dev_a_completion",
+      "change": {
+        "case_id": "Cc09",
+        "symbol": "BareValidator.purge_readonly",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Cc09::dev_b_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc09",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.purge_readonly",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Cc09::dev_b_completion",
+      "change": {
+        "case_id": "Cc09",
+        "symbol": "BareValidator.purge_readonly",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Cc09::testing_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc09",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.purge_readonly",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Cc09::testing_completion",
+      "change": {
+        "case_id": "Cc09",
+        "symbol": "BareValidator.purge_readonly",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Cc10::dev_a_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc10",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.root_allow_unknown",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Cc10::dev_a_completion",
+      "change": {
+        "case_id": "Cc10",
+        "symbol": "BareValidator.root_allow_unknown",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Cc10::dev_b_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc10",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.root_allow_unknown",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Cc10::dev_b_completion",
+      "change": {
+        "case_id": "Cc10",
+        "symbol": "BareValidator.root_allow_unknown",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.root_allow_unknown->dev_b_completion",
+      "gt_should_invalidate": true,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Cc10::testing_completion",
+      "repo": "cerberus",
+      "producer_task": "task-Cc10",
+      "producer_artifact": "cerberus/validator.py",
+      "producer_contract": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.root_allow_unknown",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Cc10::testing_completion",
+      "change": {
+        "case_id": "Cc10",
+        "symbol": "BareValidator.root_allow_unknown",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.root_allow_unknown->testing_completion",
+      "gt_should_invalidate": true,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Bc01::dev_a_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc01",
+      "producer_artifact": "boltons/typeutils.py",
+      "producer_contract": "boltons/typeutils.py::FUNCTION_SIGNATURE::make_sentinel",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Bc01::dev_a_completion",
+      "change": {
+        "case_id": "Bc01",
+        "symbol": "make_sentinel",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Bc01::dev_b_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc01",
+      "producer_artifact": "boltons/typeutils.py",
+      "producer_contract": "boltons/typeutils.py::FUNCTION_SIGNATURE::make_sentinel",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Bc01::dev_b_completion",
+      "change": {
+        "case_id": "Bc01",
+        "symbol": "make_sentinel",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Bc01::testing_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc01",
+      "producer_artifact": "boltons/typeutils.py",
+      "producer_contract": "boltons/typeutils.py::FUNCTION_SIGNATURE::make_sentinel",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Bc01::testing_completion",
+      "change": {
+        "case_id": "Bc01",
+        "symbol": "make_sentinel",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Bc02::dev_a_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc02",
+      "producer_artifact": "boltons/typeutils.py",
+      "producer_contract": "boltons/typeutils.py::FUNCTION_SIGNATURE::issubclass",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Bc02::dev_a_completion",
+      "change": {
+        "case_id": "Bc02",
+        "symbol": "issubclass",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Bc02::dev_b_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc02",
+      "producer_artifact": "boltons/typeutils.py",
+      "producer_contract": "boltons/typeutils.py::FUNCTION_SIGNATURE::issubclass",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Bc02::dev_b_completion",
+      "change": {
+        "case_id": "Bc02",
+        "symbol": "issubclass",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Bc02::testing_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc02",
+      "producer_artifact": "boltons/typeutils.py",
+      "producer_contract": "boltons/typeutils.py::FUNCTION_SIGNATURE::issubclass",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Bc02::testing_completion",
+      "change": {
+        "case_id": "Bc02",
+        "symbol": "issubclass",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Bc03::dev_a_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc03",
+      "producer_artifact": "boltons/typeutils.py",
+      "producer_contract": "boltons/typeutils.py::FUNCTION_SIGNATURE::get_all_subclasses",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Bc03::dev_a_completion",
+      "change": {
+        "case_id": "Bc03",
+        "symbol": "get_all_subclasses",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Bc03::dev_b_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc03",
+      "producer_artifact": "boltons/typeutils.py",
+      "producer_contract": "boltons/typeutils.py::FUNCTION_SIGNATURE::get_all_subclasses",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Bc03::dev_b_completion",
+      "change": {
+        "case_id": "Bc03",
+        "symbol": "get_all_subclasses",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Bc03::testing_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc03",
+      "producer_artifact": "boltons/typeutils.py",
+      "producer_contract": "boltons/typeutils.py::FUNCTION_SIGNATURE::get_all_subclasses",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Bc03::testing_completion",
+      "change": {
+        "case_id": "Bc03",
+        "symbol": "get_all_subclasses",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Bc04::dev_a_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc04",
+      "producer_artifact": "boltons/iterutils.py",
+      "producer_contract": "boltons/iterutils.py::FUNCTION_SIGNATURE::is_iterable",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Bc04::dev_a_completion",
+      "change": {
+        "case_id": "Bc04",
+        "symbol": "is_iterable",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Bc04::dev_b_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc04",
+      "producer_artifact": "boltons/iterutils.py",
+      "producer_contract": "boltons/iterutils.py::FUNCTION_SIGNATURE::is_iterable",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Bc04::dev_b_completion",
+      "change": {
+        "case_id": "Bc04",
+        "symbol": "is_iterable",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Bc04::testing_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc04",
+      "producer_artifact": "boltons/iterutils.py",
+      "producer_contract": "boltons/iterutils.py::FUNCTION_SIGNATURE::is_iterable",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Bc04::testing_completion",
+      "change": {
+        "case_id": "Bc04",
+        "symbol": "is_iterable",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Bc05::dev_a_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc05",
+      "producer_artifact": "boltons/iterutils.py",
+      "producer_contract": "boltons/iterutils.py::FUNCTION_SIGNATURE::is_scalar",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Bc05::dev_a_completion",
+      "change": {
+        "case_id": "Bc05",
+        "symbol": "is_scalar",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Bc05::dev_b_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc05",
+      "producer_artifact": "boltons/iterutils.py",
+      "producer_contract": "boltons/iterutils.py::FUNCTION_SIGNATURE::is_scalar",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Bc05::dev_b_completion",
+      "change": {
+        "case_id": "Bc05",
+        "symbol": "is_scalar",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Bc05::testing_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc05",
+      "producer_artifact": "boltons/iterutils.py",
+      "producer_contract": "boltons/iterutils.py::FUNCTION_SIGNATURE::is_scalar",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Bc05::testing_completion",
+      "change": {
+        "case_id": "Bc05",
+        "symbol": "is_scalar",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Bc06::dev_a_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc06",
+      "producer_artifact": "boltons/iterutils.py",
+      "producer_contract": "boltons/iterutils.py::FUNCTION_SIGNATURE::is_collection",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Bc06::dev_a_completion",
+      "change": {
+        "case_id": "Bc06",
+        "symbol": "is_collection",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Bc06::dev_b_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc06",
+      "producer_artifact": "boltons/iterutils.py",
+      "producer_contract": "boltons/iterutils.py::FUNCTION_SIGNATURE::is_collection",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Bc06::dev_b_completion",
+      "change": {
+        "case_id": "Bc06",
+        "symbol": "is_collection",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Bc06::testing_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc06",
+      "producer_artifact": "boltons/iterutils.py",
+      "producer_contract": "boltons/iterutils.py::FUNCTION_SIGNATURE::is_collection",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Bc06::testing_completion",
+      "change": {
+        "case_id": "Bc06",
+        "symbol": "is_collection",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Bc07::dev_a_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc07",
+      "producer_artifact": "boltons/iterutils.py",
+      "producer_contract": "boltons/iterutils.py::FUNCTION_SIGNATURE::split",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Bc07::dev_a_completion",
+      "change": {
+        "case_id": "Bc07",
+        "symbol": "split",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Bc07::dev_b_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc07",
+      "producer_artifact": "boltons/iterutils.py",
+      "producer_contract": "boltons/iterutils.py::FUNCTION_SIGNATURE::split",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Bc07::dev_b_completion",
+      "change": {
+        "case_id": "Bc07",
+        "symbol": "split",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Bc07::testing_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc07",
+      "producer_artifact": "boltons/iterutils.py",
+      "producer_contract": "boltons/iterutils.py::FUNCTION_SIGNATURE::split",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Bc07::testing_completion",
+      "change": {
+        "case_id": "Bc07",
+        "symbol": "split",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Bc08::dev_a_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc08",
+      "producer_artifact": "boltons/iterutils.py",
+      "producer_contract": "boltons/iterutils.py::FUNCTION_SIGNATURE::split_iter",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Bc08::dev_a_completion",
+      "change": {
+        "case_id": "Bc08",
+        "symbol": "split_iter",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Bc08::dev_b_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc08",
+      "producer_artifact": "boltons/iterutils.py",
+      "producer_contract": "boltons/iterutils.py::FUNCTION_SIGNATURE::split_iter",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Bc08::dev_b_completion",
+      "change": {
+        "case_id": "Bc08",
+        "symbol": "split_iter",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Bc08::testing_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc08",
+      "producer_artifact": "boltons/iterutils.py",
+      "producer_contract": "boltons/iterutils.py::FUNCTION_SIGNATURE::split_iter",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Bc08::testing_completion",
+      "change": {
+        "case_id": "Bc08",
+        "symbol": "split_iter",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Bc09::dev_a_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc09",
+      "producer_artifact": "boltons/iterutils.py",
+      "producer_contract": "boltons/iterutils.py::FUNCTION_SIGNATURE::lstrip",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Bc09::dev_a_completion",
+      "change": {
+        "case_id": "Bc09",
+        "symbol": "lstrip",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Bc09::dev_b_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc09",
+      "producer_artifact": "boltons/iterutils.py",
+      "producer_contract": "boltons/iterutils.py::FUNCTION_SIGNATURE::lstrip",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Bc09::dev_b_completion",
+      "change": {
+        "case_id": "Bc09",
+        "symbol": "lstrip",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Bc09::testing_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc09",
+      "producer_artifact": "boltons/iterutils.py",
+      "producer_contract": "boltons/iterutils.py::FUNCTION_SIGNATURE::lstrip",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Bc09::testing_completion",
+      "change": {
+        "case_id": "Bc09",
+        "symbol": "lstrip",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Bc10::dev_a_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc10",
+      "producer_artifact": "boltons/iterutils.py",
+      "producer_contract": "boltons/iterutils.py::FUNCTION_SIGNATURE::lstrip_iter",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Bc10::dev_a_completion",
+      "change": {
+        "case_id": "Bc10",
+        "symbol": "lstrip_iter",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Bc10::dev_b_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc10",
+      "producer_artifact": "boltons/iterutils.py",
+      "producer_contract": "boltons/iterutils.py::FUNCTION_SIGNATURE::lstrip_iter",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Bc10::dev_b_completion",
+      "change": {
+        "case_id": "Bc10",
+        "symbol": "lstrip_iter",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Bc10::testing_completion",
+      "repo": "boltons",
+      "producer_task": "task-Bc10",
+      "producer_artifact": "boltons/iterutils.py",
+      "producer_contract": "boltons/iterutils.py::FUNCTION_SIGNATURE::lstrip_iter",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Bc10::testing_completion",
+      "change": {
+        "case_id": "Bc10",
+        "symbol": "lstrip_iter",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Tc01::dev_a_completion",
+      "repo": "toolz",
+      "producer_task": "task-Tc01",
+      "producer_artifact": "toolz/itertoolz.py",
+      "producer_contract": "toolz/itertoolz.py::FUNCTION_SIGNATURE::remove",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Tc01::dev_a_completion",
+      "change": {
+        "case_id": "Tc01",
+        "symbol": "remove",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc01::dev_b_completion",
+      "repo": "toolz",
+      "producer_task": "task-Tc01",
+      "producer_artifact": "toolz/itertoolz.py",
+      "producer_contract": "toolz/itertoolz.py::FUNCTION_SIGNATURE::remove",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Tc01::dev_b_completion",
+      "change": {
+        "case_id": "Tc01",
+        "symbol": "remove",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc01::testing_completion",
+      "repo": "toolz",
+      "producer_task": "task-Tc01",
+      "producer_artifact": "toolz/itertoolz.py",
+      "producer_contract": "toolz/itertoolz.py::FUNCTION_SIGNATURE::remove",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Tc01::testing_completion",
+      "change": {
+        "case_id": "Tc01",
+        "symbol": "remove",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc02::dev_a_completion",
+      "repo": "toolz",
+      "producer_task": "task-Tc02",
+      "producer_artifact": "toolz/itertoolz.py",
+      "producer_contract": "toolz/itertoolz.py::FUNCTION_SIGNATURE::accumulate",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Tc02::dev_a_completion",
+      "change": {
+        "case_id": "Tc02",
+        "symbol": "accumulate",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc02::dev_b_completion",
+      "repo": "toolz",
+      "producer_task": "task-Tc02",
+      "producer_artifact": "toolz/itertoolz.py",
+      "producer_contract": "toolz/itertoolz.py::FUNCTION_SIGNATURE::accumulate",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Tc02::dev_b_completion",
+      "change": {
+        "case_id": "Tc02",
+        "symbol": "accumulate",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc02::testing_completion",
+      "repo": "toolz",
+      "producer_task": "task-Tc02",
+      "producer_artifact": "toolz/itertoolz.py",
+      "producer_contract": "toolz/itertoolz.py::FUNCTION_SIGNATURE::accumulate",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Tc02::testing_completion",
+      "change": {
+        "case_id": "Tc02",
+        "symbol": "accumulate",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc03::dev_a_completion",
+      "repo": "toolz",
+      "producer_task": "task-Tc03",
+      "producer_artifact": "toolz/itertoolz.py",
+      "producer_contract": "toolz/itertoolz.py::FUNCTION_SIGNATURE::groupby",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Tc03::dev_a_completion",
+      "change": {
+        "case_id": "Tc03",
+        "symbol": "groupby",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Tc03::dev_b_completion",
+      "repo": "toolz",
+      "producer_task": "task-Tc03",
+      "producer_artifact": "toolz/itertoolz.py",
+      "producer_contract": "toolz/itertoolz.py::FUNCTION_SIGNATURE::groupby",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Tc03::dev_b_completion",
+      "change": {
+        "case_id": "Tc03",
+        "symbol": "groupby",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Tc03::testing_completion",
+      "repo": "toolz",
+      "producer_task": "task-Tc03",
+      "producer_artifact": "toolz/itertoolz.py",
+      "producer_contract": "toolz/itertoolz.py::FUNCTION_SIGNATURE::groupby",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Tc03::testing_completion",
+      "change": {
+        "case_id": "Tc03",
+        "symbol": "groupby",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Tc04::dev_a_completion",
+      "repo": "toolz",
+      "producer_task": "task-Tc04",
+      "producer_artifact": "toolz/itertoolz.py",
+      "producer_contract": "toolz/itertoolz.py::FUNCTION_SIGNATURE::merge_sorted",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Tc04::dev_a_completion",
+      "change": {
+        "case_id": "Tc04",
+        "symbol": "merge_sorted",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Tc04::dev_b_completion",
+      "repo": "toolz",
+      "producer_task": "task-Tc04",
+      "producer_artifact": "toolz/itertoolz.py",
+      "producer_contract": "toolz/itertoolz.py::FUNCTION_SIGNATURE::merge_sorted",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Tc04::dev_b_completion",
+      "change": {
+        "case_id": "Tc04",
+        "symbol": "merge_sorted",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Tc04::testing_completion",
+      "repo": "toolz",
+      "producer_task": "task-Tc04",
+      "producer_artifact": "toolz/itertoolz.py",
+      "producer_contract": "toolz/itertoolz.py::FUNCTION_SIGNATURE::merge_sorted",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Tc04::testing_completion",
+      "change": {
+        "case_id": "Tc04",
+        "symbol": "merge_sorted",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": true
+    },
+    {
+      "instance_id": "Tc05::dev_a_completion",
+      "repo": "toolz",
+      "producer_task": "task-Tc05",
+      "producer_artifact": "toolz/itertoolz.py",
+      "producer_contract": "toolz/itertoolz.py::FUNCTION_SIGNATURE::interleave",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Tc05::dev_a_completion",
+      "change": {
+        "case_id": "Tc05",
+        "symbol": "interleave",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "toolz/itertoolz.py::FUNCTION_SIGNATURE::interleave->dev_a_completion",
+      "gt_should_invalidate": true,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc05::dev_b_completion",
+      "repo": "toolz",
+      "producer_task": "task-Tc05",
+      "producer_artifact": "toolz/itertoolz.py",
+      "producer_contract": "toolz/itertoolz.py::FUNCTION_SIGNATURE::interleave",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Tc05::dev_b_completion",
+      "change": {
+        "case_id": "Tc05",
+        "symbol": "interleave",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc05::testing_completion",
+      "repo": "toolz",
+      "producer_task": "task-Tc05",
+      "producer_artifact": "toolz/itertoolz.py",
+      "producer_contract": "toolz/itertoolz.py::FUNCTION_SIGNATURE::interleave",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Tc05::testing_completion",
+      "change": {
+        "case_id": "Tc05",
+        "symbol": "interleave",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc06::dev_a_completion",
+      "repo": "toolz",
+      "producer_task": "task-Tc06",
+      "producer_artifact": "toolz/itertoolz.py",
+      "producer_contract": "toolz/itertoolz.py::FUNCTION_SIGNATURE::unique",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Tc06::dev_a_completion",
+      "change": {
+        "case_id": "Tc06",
+        "symbol": "unique",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc06::dev_b_completion",
+      "repo": "toolz",
+      "producer_task": "task-Tc06",
+      "producer_artifact": "toolz/itertoolz.py",
+      "producer_contract": "toolz/itertoolz.py::FUNCTION_SIGNATURE::unique",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Tc06::dev_b_completion",
+      "change": {
+        "case_id": "Tc06",
+        "symbol": "unique",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc06::testing_completion",
+      "repo": "toolz",
+      "producer_task": "task-Tc06",
+      "producer_artifact": "toolz/itertoolz.py",
+      "producer_contract": "toolz/itertoolz.py::FUNCTION_SIGNATURE::unique",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Tc06::testing_completion",
+      "change": {
+        "case_id": "Tc06",
+        "symbol": "unique",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc08::dev_a_completion",
+      "repo": "toolz",
+      "producer_task": "task-Tc08",
+      "producer_artifact": "toolz/itertoolz.py",
+      "producer_contract": "toolz/itertoolz.py::FUNCTION_SIGNATURE::isdistinct",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Tc08::dev_a_completion",
+      "change": {
+        "case_id": "Tc08",
+        "symbol": "isdistinct",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc08::dev_b_completion",
+      "repo": "toolz",
+      "producer_task": "task-Tc08",
+      "producer_artifact": "toolz/itertoolz.py",
+      "producer_contract": "toolz/itertoolz.py::FUNCTION_SIGNATURE::isdistinct",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Tc08::dev_b_completion",
+      "change": {
+        "case_id": "Tc08",
+        "symbol": "isdistinct",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc08::testing_completion",
+      "repo": "toolz",
+      "producer_task": "task-Tc08",
+      "producer_artifact": "toolz/itertoolz.py",
+      "producer_contract": "toolz/itertoolz.py::FUNCTION_SIGNATURE::isdistinct",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Tc08::testing_completion",
+      "change": {
+        "case_id": "Tc08",
+        "symbol": "isdistinct",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc09::dev_a_completion",
+      "repo": "toolz",
+      "producer_task": "task-Tc09",
+      "producer_artifact": "toolz/itertoolz.py",
+      "producer_contract": "toolz/itertoolz.py::FUNCTION_SIGNATURE::take",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Tc09::dev_a_completion",
+      "change": {
+        "case_id": "Tc09",
+        "symbol": "take",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc09::dev_b_completion",
+      "repo": "toolz",
+      "producer_task": "task-Tc09",
+      "producer_artifact": "toolz/itertoolz.py",
+      "producer_contract": "toolz/itertoolz.py::FUNCTION_SIGNATURE::take",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Tc09::dev_b_completion",
+      "change": {
+        "case_id": "Tc09",
+        "symbol": "take",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc09::testing_completion",
+      "repo": "toolz",
+      "producer_task": "task-Tc09",
+      "producer_artifact": "toolz/itertoolz.py",
+      "producer_contract": "toolz/itertoolz.py::FUNCTION_SIGNATURE::take",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Tc09::testing_completion",
+      "change": {
+        "case_id": "Tc09",
+        "symbol": "take",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "toolz/itertoolz.py::FUNCTION_SIGNATURE::take->testing_completion",
+      "gt_should_invalidate": true,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc10::dev_a_completion",
+      "repo": "toolz",
+      "producer_task": "task-Tc10",
+      "producer_artifact": "toolz/itertoolz.py",
+      "producer_contract": "toolz/itertoolz.py::FUNCTION_SIGNATURE::tail",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Tc10::dev_a_completion",
+      "change": {
+        "case_id": "Tc10",
+        "symbol": "tail",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "toolz/itertoolz.py::FUNCTION_SIGNATURE::tail->dev_a_completion",
+      "gt_should_invalidate": true,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc10::dev_b_completion",
+      "repo": "toolz",
+      "producer_task": "task-Tc10",
+      "producer_artifact": "toolz/itertoolz.py",
+      "producer_contract": "toolz/itertoolz.py::FUNCTION_SIGNATURE::tail",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Tc10::dev_b_completion",
+      "change": {
+        "case_id": "Tc10",
+        "symbol": "tail",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "toolz/itertoolz.py::FUNCTION_SIGNATURE::tail->dev_b_completion",
+      "gt_should_invalidate": true,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Tc10::testing_completion",
+      "repo": "toolz",
+      "producer_task": "task-Tc10",
+      "producer_artifact": "toolz/itertoolz.py",
+      "producer_contract": "toolz/itertoolz.py::FUNCTION_SIGNATURE::tail",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Tc10::testing_completion",
+      "change": {
+        "case_id": "Tc10",
+        "symbol": "tail",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "toolz/itertoolz.py::FUNCTION_SIGNATURE::tail->testing_completion",
+      "gt_should_invalidate": true,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc01::dev_a_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc01",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.keys",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Pc01::dev_a_completion",
+      "change": {
+        "case_id": "Pc01",
+        "symbol": "ParseResults.keys",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc01::dev_b_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc01",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.keys",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Pc01::dev_b_completion",
+      "change": {
+        "case_id": "Pc01",
+        "symbol": "ParseResults.keys",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc01::testing_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc01",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.keys",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Pc01::testing_completion",
+      "change": {
+        "case_id": "Pc01",
+        "symbol": "ParseResults.keys",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc02::dev_a_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc02",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.values",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Pc02::dev_a_completion",
+      "change": {
+        "case_id": "Pc02",
+        "symbol": "ParseResults.values",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc02::dev_b_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc02",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.values",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Pc02::dev_b_completion",
+      "change": {
+        "case_id": "Pc02",
+        "symbol": "ParseResults.values",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc02::testing_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc02",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.values",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Pc02::testing_completion",
+      "change": {
+        "case_id": "Pc02",
+        "symbol": "ParseResults.values",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc03::dev_a_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc03",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.items",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Pc03::dev_a_completion",
+      "change": {
+        "case_id": "Pc03",
+        "symbol": "ParseResults.items",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.items->dev_a_completion",
+      "gt_should_invalidate": true,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc03::dev_b_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc03",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.items",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Pc03::dev_b_completion",
+      "change": {
+        "case_id": "Pc03",
+        "symbol": "ParseResults.items",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc03::testing_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc03",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.items",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Pc03::testing_completion",
+      "change": {
+        "case_id": "Pc03",
+        "symbol": "ParseResults.items",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc04::dev_a_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc04",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.haskeys",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Pc04::dev_a_completion",
+      "change": {
+        "case_id": "Pc04",
+        "symbol": "ParseResults.haskeys",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.haskeys->dev_a_completion",
+      "gt_should_invalidate": true,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc04::dev_b_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc04",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.haskeys",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Pc04::dev_b_completion",
+      "change": {
+        "case_id": "Pc04",
+        "symbol": "ParseResults.haskeys",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc04::testing_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc04",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.haskeys",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Pc04::testing_completion",
+      "change": {
+        "case_id": "Pc04",
+        "symbol": "ParseResults.haskeys",
+        "kind": "CHANGE_RETURN_TYPE",
+        "change_type": "POTENTIALLY_BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc05::dev_a_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc05",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.pop",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Pc05::dev_a_completion",
+      "change": {
+        "case_id": "Pc05",
+        "symbol": "ParseResults.pop",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.pop->dev_a_completion",
+      "gt_should_invalidate": true,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc05::dev_b_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc05",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.pop",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Pc05::dev_b_completion",
+      "change": {
+        "case_id": "Pc05",
+        "symbol": "ParseResults.pop",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.pop->dev_b_completion",
+      "gt_should_invalidate": true,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc05::testing_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc05",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.pop",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Pc05::testing_completion",
+      "change": {
+        "case_id": "Pc05",
+        "symbol": "ParseResults.pop",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.pop->testing_completion",
+      "gt_should_invalidate": true,
+      "oracle_result": "FAIL",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc06::dev_a_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc06",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.get",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Pc06::dev_a_completion",
+      "change": {
+        "case_id": "Pc06",
+        "symbol": "ParseResults.get",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc06::dev_b_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc06",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.get",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Pc06::dev_b_completion",
+      "change": {
+        "case_id": "Pc06",
+        "symbol": "ParseResults.get",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc06::testing_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc06",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.get",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Pc06::testing_completion",
+      "change": {
+        "case_id": "Pc06",
+        "symbol": "ParseResults.get",
+        "kind": "BODY_ONLY",
+        "change_type": "NON_SEMANTIC"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc07::dev_a_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc07",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.insert",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Pc07::dev_a_completion",
+      "change": {
+        "case_id": "Pc07",
+        "symbol": "ParseResults.insert",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc07::dev_b_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc07",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.insert",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Pc07::dev_b_completion",
+      "change": {
+        "case_id": "Pc07",
+        "symbol": "ParseResults.insert",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc07::testing_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc07",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.insert",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Pc07::testing_completion",
+      "change": {
+        "case_id": "Pc07",
+        "symbol": "ParseResults.insert",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc08::dev_a_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc08",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.append",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Pc08::dev_a_completion",
+      "change": {
+        "case_id": "Pc08",
+        "symbol": "ParseResults.append",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc08::dev_b_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc08",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.append",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Pc08::dev_b_completion",
+      "change": {
+        "case_id": "Pc08",
+        "symbol": "ParseResults.append",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc08::testing_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc08",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.append",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Pc08::testing_completion",
+      "change": {
+        "case_id": "Pc08",
+        "symbol": "ParseResults.append",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc09::dev_a_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc09",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.extend",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Pc09::dev_a_completion",
+      "change": {
+        "case_id": "Pc09",
+        "symbol": "ParseResults.extend",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc09::dev_b_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc09",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.extend",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Pc09::dev_b_completion",
+      "change": {
+        "case_id": "Pc09",
+        "symbol": "ParseResults.extend",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc09::testing_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc09",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.extend",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Pc09::testing_completion",
+      "change": {
+        "case_id": "Pc09",
+        "symbol": "ParseResults.extend",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "change_type": "COMPATIBLE"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc10::dev_a_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc10",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.clear",
+      "consumer_task": "task-dev_a_completion",
+      "consumer_completion": "dev_a_completion",
+      "verification_obligation": "OBL::Pc10::dev_a_completion",
+      "change": {
+        "case_id": "Pc10",
+        "symbol": "ParseResults.clear",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc10::dev_b_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc10",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.clear",
+      "consumer_task": "task-dev_b_completion",
+      "consumer_completion": "dev_b_completion",
+      "verification_obligation": "OBL::Pc10::dev_b_completion",
+      "change": {
+        "case_id": "Pc10",
+        "symbol": "ParseResults.clear",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    },
+    {
+      "instance_id": "Pc10::testing_completion",
+      "repo": "pyparsing",
+      "producer_task": "task-Pc10",
+      "producer_artifact": "pyparsing/results.py",
+      "producer_contract": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.clear",
+      "consumer_task": "task-testing_completion",
+      "consumer_completion": "testing_completion",
+      "verification_obligation": "OBL::Pc10::testing_completion",
+      "change": {
+        "case_id": "Pc10",
+        "symbol": "ParseResults.clear",
+        "kind": "ADD_REQUIRED_PARAM",
+        "change_type": "BREAKING"
+      },
+      "ground_truth_relation": "NONE",
+      "gt_should_invalidate": false,
+      "oracle_result": "PASS",
+      "is_gfc": false
+    }
+  ]
+}

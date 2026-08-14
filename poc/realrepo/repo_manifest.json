@@ -1,0 +1,37 @@
+{
+  "repos": {
+    "tinydb": {
+      "language": "Python",
+      "commit": "4aa53111d72c9cbaafcdc039211caf49f4face6f",
+      "source": "https://github.com/msiemens/tinydb (shallow clone, depth 1)",
+      "loc": 0,
+      "source_files": ["tinydb/table.py", "tinydb/database.py", "tinydb/queries.py", "tinydb/storages.py", "tinydb/middlewares.py", "tinydb/operations.py", "tinydb/utils.py"],
+      "test_files": ["tests/test_tinydb.py", "tests/test_tables.py", "tests/test_queries.py", "tests/test_operations.py", "tests/test_middlewares.py", "tests/test_storages.py", "tests/test_utils.py"],
+      "test_command": "python3 -m pytest",
+      "test_time_s": 0.64,
+      "note": "real open-source library; module chain table->database->queries/operations is the A->B consumer dependency"
+    },
+    "cerberus": {
+      "language": "Python",
+      "commit": "65e977de08ab76d4b40ca981972f9ff68926ed63",
+      "source": "https://github.com/pyeve/cerberus (shallow clone, depth 1)",
+      "loc": 0,
+      "source_files": ["cerberus/schema.py", "cerberus/validator.py", "cerberus/errors.py", "cerberus/utils.py", "cerberus/platform.py"],
+      "test_files": ["cerberus/tests/test_schema.py", "cerberus/tests/test_validation.py", "cerberus/tests/test_normalization.py", "cerberus/tests/test_utils.py", "cerberus/tests/test_errors.py"],
+      "test_command": "python3 -m pytest cerberus/tests",
+      "test_time_s": 0.35,
+      "note": "real open-source library; validator consumes schema/errors/utils — schema->validator is the core edge"
+    },
+    "boltons": {
+      "language": "Python",
+      "commit": "580a9c2d12755c472e534ca3e277e8f7e3ada49e",
+      "source": "https://github.com/mahmoud/boltons (shallow clone, depth 1)",
+      "loc": 0,
+      "source_files": ["boltons/typeutils.py", "boltons/iterutils.py"],
+      "test_files": ["tests/test_iterutils.py", "tests/test_typeutils.py"],
+      "test_command": "python3 -m pytest",
+      "test_time_s": 3.26,
+      "note": "real open-source library; typeutils.make_sentinel consumed by iterutils (lazy import edge)"
+    }
+  }
+}

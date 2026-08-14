@@ -1,0 +1,2 @@
+component,test_runtime_s,n_pytest_runs,llm_tokens,agent_calls,note
+calibration,~487,≈600,0,0,"50 cases x 3 regimes real pytest (one-time, cached)"

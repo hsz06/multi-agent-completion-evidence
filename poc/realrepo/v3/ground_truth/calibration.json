@@ -1,0 +1,4504 @@
+{
+  "regimes": {
+    "LOCAL": [
+      {
+        "applied": true,
+        "case_id": "Tc01",
+        "repo": "tinydb",
+        "symbol": "Table.name",
+        "kind": "BODY_ONLY",
+        "file": "tinydb/table.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.645
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.451
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.479
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 1.063
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc02",
+        "repo": "tinydb",
+        "symbol": "Table.storage",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "tinydb/table.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.488
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.445
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.478
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.929
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc03",
+        "repo": "tinydb",
+        "symbol": "Table.insert",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "tinydb/table.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.453
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.414
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.444
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 17,
+            "duration_s": 1.197
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc04",
+        "repo": "tinydb",
+        "symbol": "Table.insert_multiple",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "tinydb/table.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.519
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.485
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.483
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 5,
+            "duration_s": 1.06
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc05",
+        "repo": "tinydb",
+        "symbol": "Table.all",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "tinydb/table.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 2,
+            "duration_s": 0.52
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.426
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.454
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 17,
+            "duration_s": 1.134
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc06",
+        "repo": "tinydb",
+        "symbol": "Table.search",
+        "kind": "BODY_ONLY",
+        "file": "tinydb/table.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.469
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.418
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.449
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.932
+          }
+        }
+      },
+      {
+        "applied": false,
+        "error": "AssertionError: no arglist paren in header: ''",
+        "results": {}
+      },
+      {
+        "applied": true,
+        "case_id": "Tc08",
+        "repo": "tinydb",
+        "symbol": "Table.contains",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "tinydb/table.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.453
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.415
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.465
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 1.032
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc09",
+        "repo": "tinydb",
+        "symbol": "Table.update",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "tinydb/table.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.503
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.425
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 14,
+            "duration_s": 0.482
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 38,
+            "duration_s": 1.202
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc10",
+        "repo": "tinydb",
+        "symbol": "Table.update_multiple",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "tinydb/table.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.189
+          },
+          "dev_b_completion": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.192
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.215
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.216
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc01",
+        "repo": "cerberus",
+        "symbol": "dummy_for_rule_validation",
+        "kind": "BODY_ONLY",
+        "file": "cerberus/validator.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.155
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.195
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.256
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 1,
+            "duration_s": 0.529
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc02",
+        "repo": "cerberus",
+        "symbol": "BareValidator.clear_caches",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "cerberus/validator.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.157
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.198
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.236
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 1,
+            "duration_s": 0.499
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc03",
+        "repo": "cerberus",
+        "symbol": "BareValidator.allow_unknown",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "cerberus/validator.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.134
+          },
+          "dev_b_completion": {
+            "result": "FAIL",
+            "tests_failed": 5,
+            "duration_s": 0.617
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 45,
+            "duration_s": 2.372
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 173,
+            "duration_s": 10.122
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc04",
+        "repo": "cerberus",
+        "symbol": "BareValidator.require_all",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "cerberus/validator.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.189
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.204
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.238
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 6,
+            "duration_s": 0.572
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc05",
+        "repo": "cerberus",
+        "symbol": "BareValidator.errors",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "cerberus/validator.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.153
+          },
+          "dev_b_completion": {
+            "result": "FAIL",
+            "tests_failed": 3,
+            "duration_s": 0.226
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.227
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 23,
+            "duration_s": 0.807
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc06",
+        "repo": "cerberus",
+        "symbol": "BareValidator.ignore_none_values",
+        "kind": "BODY_ONLY",
+        "file": "cerberus/validator.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.139
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.189
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.229
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 1,
+            "duration_s": 0.497
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc07",
+        "repo": "cerberus",
+        "symbol": "BareValidator.is_child",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "cerberus/validator.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.146
+          },
+          "dev_b_completion": {
+            "result": "FAIL",
+            "tests_failed": 2,
+            "duration_s": 0.393
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 13,
+            "duration_s": 1.449
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 46,
+            "duration_s": 3.646
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc08",
+        "repo": "cerberus",
+        "symbol": "BareValidator.purge_unknown",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "cerberus/validator.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.162
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.202
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.249
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 1,
+            "duration_s": 0.527
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc09",
+        "repo": "cerberus",
+        "symbol": "BareValidator.purge_readonly",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "cerberus/validator.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.147
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.205
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.24
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 6,
+            "duration_s": 0.603
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc10",
+        "repo": "cerberus",
+        "symbol": "BareValidator.root_allow_unknown",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "cerberus/validator.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.163
+          },
+          "dev_b_completion": {
+            "result": "FAIL",
+            "tests_failed": 2,
+            "duration_s": 0.764
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 36,
+            "duration_s": 3.793
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 141,
+            "duration_s": 15.544
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc01",
+        "repo": "boltons",
+        "symbol": "make_sentinel",
+        "kind": "BODY_ONLY",
+        "file": "boltons/typeutils.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.234
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.251
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.172
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.355
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc02",
+        "repo": "boltons",
+        "symbol": "issubclass",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "boltons/typeutils.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.136
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.216
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.159
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.333
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc03",
+        "repo": "boltons",
+        "symbol": "get_all_subclasses",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "boltons/typeutils.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.133
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.21
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.171
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.342
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc04",
+        "repo": "boltons",
+        "symbol": "is_iterable",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "boltons/iterutils.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.152
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.21
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.169
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.348
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc05",
+        "repo": "boltons",
+        "symbol": "is_scalar",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "boltons/iterutils.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.137
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.201
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.157
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.337
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc06",
+        "repo": "boltons",
+        "symbol": "is_collection",
+        "kind": "BODY_ONLY",
+        "file": "boltons/iterutils.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.151
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.21
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.158
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.343
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc07",
+        "repo": "boltons",
+        "symbol": "split",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "boltons/iterutils.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.135
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.206
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.164
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 1,
+            "duration_s": 0.366
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc08",
+        "repo": "boltons",
+        "symbol": "split_iter",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "boltons/iterutils.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.134
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.205
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.159
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.365
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc09",
+        "repo": "boltons",
+        "symbol": "lstrip",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "boltons/iterutils.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.152
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.214
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.168
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 1,
+            "duration_s": 0.389
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc10",
+        "repo": "boltons",
+        "symbol": "lstrip_iter",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "boltons/iterutils.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.133
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.206
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.16
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 2,
+            "duration_s": 0.392
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc01",
+        "repo": "tinydb",
+        "symbol": "Table.name",
+        "kind": "BODY_ONLY",
+        "file": "tinydb/table.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.645
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.451
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.479
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 1.063
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc02",
+        "repo": "tinydb",
+        "symbol": "Table.storage",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "tinydb/table.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.488
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.445
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.478
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.929
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc03",
+        "repo": "tinydb",
+        "symbol": "Table.insert",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "tinydb/table.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.453
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.414
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.444
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 17,
+            "duration_s": 1.197
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc04",
+        "repo": "tinydb",
+        "symbol": "Table.insert_multiple",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "tinydb/table.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.519
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.485
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.483
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 5,
+            "duration_s": 1.06
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc05",
+        "repo": "tinydb",
+        "symbol": "Table.all",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "tinydb/table.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 2,
+            "duration_s": 0.52
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.426
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.454
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 17,
+            "duration_s": 1.134
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc06",
+        "repo": "tinydb",
+        "symbol": "Table.search",
+        "kind": "BODY_ONLY",
+        "file": "tinydb/table.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.469
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.418
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.449
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.932
+          }
+        }
+      },
+      {
+        "applied": false,
+        "error": "AssertionError: no arglist paren in header: ''",
+        "results": {}
+      },
+      {
+        "applied": true,
+        "case_id": "Tc08",
+        "repo": "tinydb",
+        "symbol": "Table.contains",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "tinydb/table.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.453
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.415
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.465
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 1.032
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc09",
+        "repo": "tinydb",
+        "symbol": "Table.update",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "tinydb/table.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.503
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.425
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 14,
+            "duration_s": 0.482
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 38,
+            "duration_s": 1.202
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc10",
+        "repo": "tinydb",
+        "symbol": "Table.update_multiple",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "tinydb/table.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.189
+          },
+          "dev_b_completion": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.192
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.215
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.216
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc01",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.keys",
+        "kind": "BODY_ONLY",
+        "file": "pyparsing/results.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.267
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.247
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.281
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.509
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc02",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.values",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "pyparsing/results.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.253
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.26
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.286
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.543
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc03",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.items",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "pyparsing/results.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 5,
+            "duration_s": 0.309
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.314
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.341
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 5,
+            "duration_s": 2.587
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc04",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.haskeys",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "pyparsing/results.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 2,
+            "duration_s": 0.274
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.263
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.28
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 2,
+            "duration_s": 2.591
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc05",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.pop",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "pyparsing/results.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.249
+          },
+          "dev_b_completion": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.26
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.28
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.356
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc06",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.get",
+        "kind": "BODY_ONLY",
+        "file": "pyparsing/results.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.243
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.264
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.273
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.512
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc07",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.insert",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "pyparsing/results.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.262
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.263
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.281
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.55
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc08",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.append",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "pyparsing/results.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.266
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.253
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.284
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.662
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc09",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.extend",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "pyparsing/results.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.233
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.228
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.262
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.521
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc10",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.clear",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "pyparsing/results.py",
+        "regime": "LOCAL",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.265
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.275
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.306
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.584
+          }
+        }
+      }
+    ],
+    "MODULE": [
+      {
+        "applied": true,
+        "case_id": "Tc01",
+        "repo": "tinydb",
+        "symbol": "Table.name",
+        "kind": "BODY_ONLY",
+        "file": "tinydb/table.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.833
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.514
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.544
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.998
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc02",
+        "repo": "tinydb",
+        "symbol": "Table.storage",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "tinydb/table.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.815
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.51
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.604
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 1.063
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc03",
+        "repo": "tinydb",
+        "symbol": "Table.insert",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "tinydb/table.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 17,
+            "duration_s": 1.033
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.496
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.552
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 17,
+            "duration_s": 1.143
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc04",
+        "repo": "tinydb",
+        "symbol": "Table.insert_multiple",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "tinydb/table.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 5,
+            "duration_s": 0.886
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.495
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.553
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 5,
+            "duration_s": 1.043
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc05",
+        "repo": "tinydb",
+        "symbol": "Table.all",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "tinydb/table.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 17,
+            "duration_s": 0.975
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.493
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 2,
+            "duration_s": 0.573
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 17,
+            "duration_s": 1.148
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc06",
+        "repo": "tinydb",
+        "symbol": "Table.search",
+        "kind": "BODY_ONLY",
+        "file": "tinydb/table.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.829
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.53
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.574
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.997
+          }
+        }
+      },
+      {
+        "applied": false,
+        "error": "AssertionError: no arglist paren in header: ''",
+        "results": {}
+      },
+      {
+        "applied": true,
+        "case_id": "Tc08",
+        "repo": "tinydb",
+        "symbol": "Table.contains",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "tinydb/table.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.77
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.506
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.551
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.97
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc09",
+        "repo": "tinydb",
+        "symbol": "Table.update",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "tinydb/table.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 24,
+            "duration_s": 1.055
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.518
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 14,
+            "duration_s": 0.601
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 38,
+            "duration_s": 1.258
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc10",
+        "repo": "tinydb",
+        "symbol": "Table.update_multiple",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "tinydb/table.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.21
+          },
+          "dev_b_completion": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.21
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.236
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.232
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc01",
+        "repo": "cerberus",
+        "symbol": "dummy_for_rule_validation",
+        "kind": "BODY_ONLY",
+        "file": "cerberus/validator.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.2
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.234
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.264
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 1,
+            "duration_s": 0.532
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc02",
+        "repo": "cerberus",
+        "symbol": "BareValidator.clear_caches",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "cerberus/validator.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.174
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.213
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.245
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 1,
+            "duration_s": 0.508
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc03",
+        "repo": "cerberus",
+        "symbol": "BareValidator.allow_unknown",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "cerberus/validator.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 10,
+            "duration_s": 0.838
+          },
+          "dev_b_completion": {
+            "result": "FAIL",
+            "tests_failed": 14,
+            "duration_s": 1.119
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 50,
+            "duration_s": 2.819
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 173,
+            "duration_s": 10.742
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc04",
+        "repo": "cerberus",
+        "symbol": "BareValidator.require_all",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "cerberus/validator.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.219
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.24
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.265
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 6,
+            "duration_s": 0.601
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc05",
+        "repo": "cerberus",
+        "symbol": "BareValidator.errors",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "cerberus/validator.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 7,
+            "duration_s": 0.333
+          },
+          "dev_b_completion": {
+            "result": "FAIL",
+            "tests_failed": 4,
+            "duration_s": 0.28
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.248
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 23,
+            "duration_s": 0.829
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc06",
+        "repo": "cerberus",
+        "symbol": "BareValidator.ignore_none_values",
+        "kind": "BODY_ONLY",
+        "file": "cerberus/validator.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.163
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.213
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.256
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 1,
+            "duration_s": 0.564
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc07",
+        "repo": "cerberus",
+        "symbol": "BareValidator.is_child",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "cerberus/validator.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 9,
+            "duration_s": 0.201
+          },
+          "dev_b_completion": {
+            "result": "FAIL",
+            "tests_failed": 5,
+            "duration_s": 0.715
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 15,
+            "duration_s": 1.546
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 46,
+            "duration_s": 3.819
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc08",
+        "repo": "cerberus",
+        "symbol": "BareValidator.purge_unknown",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "cerberus/validator.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.189
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.228
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.263
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 1,
+            "duration_s": 0.523
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc09",
+        "repo": "cerberus",
+        "symbol": "BareValidator.purge_readonly",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "cerberus/validator.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.173
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.212
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.255
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 6,
+            "duration_s": 0.581
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc10",
+        "repo": "cerberus",
+        "symbol": "BareValidator.root_allow_unknown",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "cerberus/validator.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 1,
+            "duration_s": 0.69
+          },
+          "dev_b_completion": {
+            "result": "FAIL",
+            "tests_failed": 9,
+            "duration_s": 1.509
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 37,
+            "duration_s": 4.216
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 141,
+            "duration_s": 16.983
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc01",
+        "repo": "boltons",
+        "symbol": "make_sentinel",
+        "kind": "BODY_ONLY",
+        "file": "boltons/typeutils.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.375
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.292
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.221
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.346
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc02",
+        "repo": "boltons",
+        "symbol": "issubclass",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "boltons/typeutils.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.254
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.273
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.204
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.342
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc03",
+        "repo": "boltons",
+        "symbol": "get_all_subclasses",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "boltons/typeutils.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.244
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.27
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.195
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.35
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc04",
+        "repo": "boltons",
+        "symbol": "is_iterable",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "boltons/iterutils.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.254
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.267
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.211
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.345
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc05",
+        "repo": "boltons",
+        "symbol": "is_scalar",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "boltons/iterutils.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.25
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.267
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.209
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.334
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc06",
+        "repo": "boltons",
+        "symbol": "is_collection",
+        "kind": "BODY_ONLY",
+        "file": "boltons/iterutils.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.244
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.275
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.214
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.335
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc07",
+        "repo": "boltons",
+        "symbol": "split",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "boltons/iterutils.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 1,
+            "duration_s": 0.27
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.254
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.199
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 1,
+            "duration_s": 0.357
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc08",
+        "repo": "boltons",
+        "symbol": "split_iter",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "boltons/iterutils.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.264
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.269
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.207
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.344
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc09",
+        "repo": "boltons",
+        "symbol": "lstrip",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "boltons/iterutils.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 1,
+            "duration_s": 0.275
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.276
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.201
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 1,
+            "duration_s": 0.356
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc10",
+        "repo": "boltons",
+        "symbol": "lstrip_iter",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "boltons/iterutils.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 2,
+            "duration_s": 0.286
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.27
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.226
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 2,
+            "duration_s": 0.39
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc01",
+        "repo": "tinydb",
+        "symbol": "Table.name",
+        "kind": "BODY_ONLY",
+        "file": "tinydb/table.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.833
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.514
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.544
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.998
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc02",
+        "repo": "tinydb",
+        "symbol": "Table.storage",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "tinydb/table.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.815
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.51
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.604
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 1.063
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc03",
+        "repo": "tinydb",
+        "symbol": "Table.insert",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "tinydb/table.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 17,
+            "duration_s": 1.033
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.496
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.552
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 17,
+            "duration_s": 1.143
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc04",
+        "repo": "tinydb",
+        "symbol": "Table.insert_multiple",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "tinydb/table.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 5,
+            "duration_s": 0.886
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.495
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.553
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 5,
+            "duration_s": 1.043
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc05",
+        "repo": "tinydb",
+        "symbol": "Table.all",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "tinydb/table.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 17,
+            "duration_s": 0.975
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.493
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 2,
+            "duration_s": 0.573
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 17,
+            "duration_s": 1.148
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc06",
+        "repo": "tinydb",
+        "symbol": "Table.search",
+        "kind": "BODY_ONLY",
+        "file": "tinydb/table.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.829
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.53
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.574
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.997
+          }
+        }
+      },
+      {
+        "applied": false,
+        "error": "AssertionError: no arglist paren in header: ''",
+        "results": {}
+      },
+      {
+        "applied": true,
+        "case_id": "Tc08",
+        "repo": "tinydb",
+        "symbol": "Table.contains",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "tinydb/table.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.77
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.506
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.551
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.97
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc09",
+        "repo": "tinydb",
+        "symbol": "Table.update",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "tinydb/table.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 24,
+            "duration_s": 1.055
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.518
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 14,
+            "duration_s": 0.601
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 38,
+            "duration_s": 1.258
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc10",
+        "repo": "tinydb",
+        "symbol": "Table.update_multiple",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "tinydb/table.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.21
+          },
+          "dev_b_completion": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.21
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.236
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.232
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc01",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.keys",
+        "kind": "BODY_ONLY",
+        "file": "pyparsing/results.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.315
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.327
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.327
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.558
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc02",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.values",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "pyparsing/results.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.315
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.351
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.347
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.547
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc03",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.items",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "pyparsing/results.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 5,
+            "duration_s": 0.403
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.351
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 5,
+            "duration_s": 0.408
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 5,
+            "duration_s": 2.648
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc04",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.haskeys",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "pyparsing/results.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 2,
+            "duration_s": 0.328
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.375
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 2,
+            "duration_s": 0.38
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 2,
+            "duration_s": 2.581
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc05",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.pop",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "pyparsing/results.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.282
+          },
+          "dev_b_completion": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.291
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.306
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.384
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc06",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.get",
+        "kind": "BODY_ONLY",
+        "file": "pyparsing/results.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.301
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.339
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.336
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.541
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc07",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.insert",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "pyparsing/results.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.304
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.336
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.369
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.549
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc08",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.append",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "pyparsing/results.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.31
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.35
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.34
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.546
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc09",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.extend",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "pyparsing/results.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.302
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.43
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.371
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.533
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc10",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.clear",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "pyparsing/results.py",
+        "regime": "MODULE",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.325
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.36
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.342
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.558
+          }
+        }
+      }
+    ],
+    "INTEGRATION": [
+      {
+        "applied": true,
+        "case_id": "Tc01",
+        "repo": "tinydb",
+        "symbol": "Table.name",
+        "kind": "BODY_ONLY",
+        "file": "tinydb/table.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.921
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.581
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.932
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.983
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc02",
+        "repo": "tinydb",
+        "symbol": "Table.storage",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "tinydb/table.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.776
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.593
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.841
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.945
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc03",
+        "repo": "tinydb",
+        "symbol": "Table.insert",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "tinydb/table.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 17,
+            "duration_s": 0.991
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.597
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 17,
+            "duration_s": 1.013
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 17,
+            "duration_s": 1.165
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc04",
+        "repo": "tinydb",
+        "symbol": "Table.insert_multiple",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "tinydb/table.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 5,
+            "duration_s": 0.815
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.608
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 5,
+            "duration_s": 0.927
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 5,
+            "duration_s": 1.025
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc05",
+        "repo": "tinydb",
+        "symbol": "Table.all",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "tinydb/table.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 18,
+            "duration_s": 0.972
+          },
+          "dev_b_completion": {
+            "result": "FAIL",
+            "tests_failed": 2,
+            "duration_s": 0.622
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 17,
+            "duration_s": 1.05
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 17,
+            "duration_s": 1.091
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc06",
+        "repo": "tinydb",
+        "symbol": "Table.search",
+        "kind": "BODY_ONLY",
+        "file": "tinydb/table.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.793
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.601
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.839
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.934
+          }
+        }
+      },
+      {
+        "applied": false,
+        "error": "AssertionError: no arglist paren in header: ''",
+        "results": {}
+      },
+      {
+        "applied": true,
+        "case_id": "Tc08",
+        "repo": "tinydb",
+        "symbol": "Table.contains",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "tinydb/table.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.822
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.62
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.869
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.957
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc09",
+        "repo": "tinydb",
+        "symbol": "Table.update",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "tinydb/table.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 24,
+            "duration_s": 1.025
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.643
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 38,
+            "duration_s": 1.16
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 38,
+            "duration_s": 1.2
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc10",
+        "repo": "tinydb",
+        "symbol": "Table.update_multiple",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "tinydb/table.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.206
+          },
+          "dev_b_completion": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.208
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.232
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.223
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc01",
+        "repo": "cerberus",
+        "symbol": "dummy_for_rule_validation",
+        "kind": "BODY_ONLY",
+        "file": "cerberus/validator.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.423
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.232
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.491
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 1,
+            "duration_s": 0.5
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc02",
+        "repo": "cerberus",
+        "symbol": "BareValidator.clear_caches",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "cerberus/validator.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.432
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.272
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.506
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 1,
+            "duration_s": 0.518
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc03",
+        "repo": "cerberus",
+        "symbol": "BareValidator.allow_unknown",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "cerberus/validator.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 128,
+            "duration_s": 8.165
+          },
+          "dev_b_completion": {
+            "result": "FAIL",
+            "tests_failed": 17,
+            "duration_s": 1.365
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 168,
+            "duration_s": 10.111
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 173,
+            "duration_s": 10.504
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc04",
+        "repo": "cerberus",
+        "symbol": "BareValidator.require_all",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "cerberus/validator.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 5,
+            "duration_s": 0.648
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.262
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 5,
+            "duration_s": 0.615
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 6,
+            "duration_s": 0.628
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc05",
+        "repo": "cerberus",
+        "symbol": "BareValidator.errors",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "cerberus/validator.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 22,
+            "duration_s": 0.74
+          },
+          "dev_b_completion": {
+            "result": "FAIL",
+            "tests_failed": 5,
+            "duration_s": 0.35
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 15,
+            "duration_s": 0.748
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 23,
+            "duration_s": 0.903
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc06",
+        "repo": "cerberus",
+        "symbol": "BareValidator.ignore_none_values",
+        "kind": "BODY_ONLY",
+        "file": "cerberus/validator.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.491
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.269
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.511
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 1,
+            "duration_s": 0.553
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc07",
+        "repo": "cerberus",
+        "symbol": "BareValidator.is_child",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "cerberus/validator.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 35,
+            "duration_s": 2.663
+          },
+          "dev_b_completion": {
+            "result": "FAIL",
+            "tests_failed": 5,
+            "duration_s": 0.733
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 41,
+            "duration_s": 3.889
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 46,
+            "duration_s": 3.769
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc08",
+        "repo": "cerberus",
+        "symbol": "BareValidator.purge_unknown",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "cerberus/validator.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.432
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.25
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.5
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 1,
+            "duration_s": 0.524
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc09",
+        "repo": "cerberus",
+        "symbol": "BareValidator.purge_readonly",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "cerberus/validator.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 5,
+            "duration_s": 0.507
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.243
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 5,
+            "duration_s": 0.619
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 6,
+            "duration_s": 0.628
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Cc10",
+        "repo": "cerberus",
+        "symbol": "BareValidator.root_allow_unknown",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "cerberus/validator.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 105,
+            "duration_s": 12.469
+          },
+          "dev_b_completion": {
+            "result": "FAIL",
+            "tests_failed": 11,
+            "duration_s": 1.875
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 141,
+            "duration_s": 15.444
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 141,
+            "duration_s": 16.121
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc01",
+        "repo": "boltons",
+        "symbol": "make_sentinel",
+        "kind": "BODY_ONLY",
+        "file": "boltons/typeutils.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.887
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.368
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.334
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.341
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc02",
+        "repo": "boltons",
+        "symbol": "issubclass",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "boltons/typeutils.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.787
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.36
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.323
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.326
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc03",
+        "repo": "boltons",
+        "symbol": "get_all_subclasses",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "boltons/typeutils.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.786
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.361
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.352
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.359
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc04",
+        "repo": "boltons",
+        "symbol": "is_iterable",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "boltons/iterutils.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.795
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.359
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.328
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.335
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc05",
+        "repo": "boltons",
+        "symbol": "is_scalar",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "boltons/iterutils.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.781
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.352
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.321
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.336
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc06",
+        "repo": "boltons",
+        "symbol": "is_collection",
+        "kind": "BODY_ONLY",
+        "file": "boltons/iterutils.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.791
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.396
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.345
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.345
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc07",
+        "repo": "boltons",
+        "symbol": "split",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "boltons/iterutils.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 1,
+            "duration_s": 0.818
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.354
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 1,
+            "duration_s": 0.35
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 1,
+            "duration_s": 0.375
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc08",
+        "repo": "boltons",
+        "symbol": "split_iter",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "boltons/iterutils.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.774
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.346
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.367
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.371
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc09",
+        "repo": "boltons",
+        "symbol": "lstrip",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "boltons/iterutils.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 1,
+            "duration_s": 0.829
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.353
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 1,
+            "duration_s": 0.364
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 1,
+            "duration_s": 0.373
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Bc10",
+        "repo": "boltons",
+        "symbol": "lstrip_iter",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "boltons/iterutils.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 2,
+            "duration_s": 0.825
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.349
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 2,
+            "duration_s": 0.386
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 2,
+            "duration_s": 0.393
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc01",
+        "repo": "tinydb",
+        "symbol": "Table.name",
+        "kind": "BODY_ONLY",
+        "file": "tinydb/table.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.921
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.581
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.932
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.983
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc02",
+        "repo": "tinydb",
+        "symbol": "Table.storage",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "tinydb/table.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.776
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.593
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.841
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.945
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc03",
+        "repo": "tinydb",
+        "symbol": "Table.insert",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "tinydb/table.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 17,
+            "duration_s": 0.991
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.597
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 17,
+            "duration_s": 1.013
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 17,
+            "duration_s": 1.165
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc04",
+        "repo": "tinydb",
+        "symbol": "Table.insert_multiple",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "tinydb/table.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 5,
+            "duration_s": 0.815
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.608
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 5,
+            "duration_s": 0.927
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 5,
+            "duration_s": 1.025
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc05",
+        "repo": "tinydb",
+        "symbol": "Table.all",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "tinydb/table.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 18,
+            "duration_s": 0.972
+          },
+          "dev_b_completion": {
+            "result": "FAIL",
+            "tests_failed": 2,
+            "duration_s": 0.622
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 17,
+            "duration_s": 1.05
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 17,
+            "duration_s": 1.091
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc06",
+        "repo": "tinydb",
+        "symbol": "Table.search",
+        "kind": "BODY_ONLY",
+        "file": "tinydb/table.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.793
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.601
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.839
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.934
+          }
+        }
+      },
+      {
+        "applied": false,
+        "error": "AssertionError: no arglist paren in header: ''",
+        "results": {}
+      },
+      {
+        "applied": true,
+        "case_id": "Tc08",
+        "repo": "tinydb",
+        "symbol": "Table.contains",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "tinydb/table.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.822
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.62
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.869
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.957
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc09",
+        "repo": "tinydb",
+        "symbol": "Table.update",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "tinydb/table.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 24,
+            "duration_s": 1.025
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 0.643
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 38,
+            "duration_s": 1.16
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 38,
+            "duration_s": 1.2
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Tc10",
+        "repo": "tinydb",
+        "symbol": "Table.update_multiple",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "tinydb/table.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.206
+          },
+          "dev_b_completion": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.208
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.232
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.223
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc01",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.keys",
+        "kind": "BODY_ONLY",
+        "file": "pyparsing/results.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.456
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.509
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.529
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.635
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc02",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.values",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "pyparsing/results.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.557
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.5
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.519
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.528
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc03",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.items",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "pyparsing/results.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 5,
+            "duration_s": 2.555
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.582
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 5,
+            "duration_s": 2.626
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 5,
+            "duration_s": 2.566
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc04",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.haskeys",
+        "kind": "CHANGE_RETURN_TYPE",
+        "file": "pyparsing/results.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": 2,
+            "duration_s": 2.497
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.512
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": 2,
+            "duration_s": 2.834
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": 2,
+            "duration_s": 2.642
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc05",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.pop",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "pyparsing/results.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.307
+          },
+          "dev_b_completion": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.339
+          },
+          "testing_completion": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.336
+          },
+          "oracle": {
+            "result": "FAIL",
+            "tests_failed": -1,
+            "duration_s": 0.328
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc06",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.get",
+        "kind": "BODY_ONLY",
+        "file": "pyparsing/results.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.438
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.496
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.588
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.563
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc07",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.insert",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "pyparsing/results.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.749
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.76
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.548
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.539
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc08",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.append",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "pyparsing/results.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.441
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.562
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.561
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.568
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc09",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.extend",
+        "kind": "ADD_OPTIONAL_PARAM",
+        "file": "pyparsing/results.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.554
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.579
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.498
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.536
+          }
+        }
+      },
+      {
+        "applied": true,
+        "case_id": "Pc10",
+        "repo": "pyparsing",
+        "symbol": "ParseResults.clear",
+        "kind": "ADD_REQUIRED_PARAM",
+        "file": "pyparsing/results.py",
+        "regime": "INTEGRATION",
+        "results": {
+          "dev_a_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.516
+          },
+          "dev_b_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.511
+          },
+          "testing_completion": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.51
+          },
+          "oracle": {
+            "result": "PASS",
+            "tests_failed": 0,
+            "duration_s": 2.597
+          }
+        }
+      }
+    ]
+  }
+}

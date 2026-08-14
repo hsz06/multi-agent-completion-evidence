@@ -1,0 +1,126 @@
+{
+  "config": {
+    "selector": "assertion",
+    "early_stop": "on",
+    "threshold": 1.0
+  },
+  "n_cases": 56,
+  "aggregate": {
+    "Local": {
+      "detection_rate": 0.2857,
+      "vrr": 0.2857,
+      "avg_test_count": 1.0,
+      "total_runtime": 15.399,
+      "avg_relative_cost": 0.1117,
+      "early_stop_hits": 0
+    },
+    "CoverageOnly@0.8": {
+      "detection_rate": 0.6607,
+      "vrr": 0.6607,
+      "avg_test_count": 2.05,
+      "total_runtime": 33.205,
+      "avg_relative_cost": 0.234,
+      "early_stop_hits": 0
+    },
+    "CoverageOnly@1.0": {
+      "detection_rate": 0.8214,
+      "vrr": 0.8214,
+      "avg_test_count": 2.77,
+      "total_runtime": 51.385,
+      "avg_relative_cost": 0.3631,
+      "early_stop_hits": 0
+    },
+    "AssertionAware@0.8": {
+      "detection_rate": 0.6607,
+      "vrr": 0.6607,
+      "avg_test_count": 2.05,
+      "total_runtime": 33.205,
+      "avg_relative_cost": 0.234,
+      "early_stop_hits": 0
+    },
+    "AssertionAware@1.0": {
+      "detection_rate": 0.8214,
+      "vrr": 0.8214,
+      "avg_test_count": 2.77,
+      "total_runtime": 51.385,
+      "avg_relative_cost": 0.3631,
+      "early_stop_hits": 0
+    },
+    "AssertionTop1+EarlyStop": {
+      "detection_rate": 0.8214,
+      "vrr": 0.8214,
+      "avg_test_count": 2.0,
+      "total_runtime": 38.506,
+      "avg_relative_cost": 0.2758,
+      "early_stop_hits": 0
+    },
+    "AssertionAware+EarlyStop": {
+      "detection_rate": 0.8214,
+      "vrr": 0.8214,
+      "avg_test_count": 2.23,
+      "total_runtime": 40.435,
+      "avg_relative_cost": 0.2858,
+      "early_stop_hits": 16
+    },
+    "IntegrationAll": {
+      "detection_rate": 1.0,
+      "vrr": 1.0,
+      "avg_test_count": 8.07,
+      "total_runtime": 140.024,
+      "avg_relative_cost": 1.0,
+      "early_stop_hits": 0
+    }
+  },
+  "type_b": {
+    "type_b_total": 40,
+    "fixed_by_assertion_aware": 0,
+    "still_missed": 10,
+    "type_b_fix_rate": 0.0
+  },
+  "false_expansion": {
+    "CoverageOnly@0.8": {
+      "existing_detects_cases": 16,
+      "still_expanded": 16,
+      "false_expansion_rate": 1.0,
+      "saved_tests": 0,
+      "saved_runtime": 0.0
+    },
+    "AssertionAware@1.0": {
+      "existing_detects_cases": 16,
+      "still_expanded": 16,
+      "false_expansion_rate": 1.0,
+      "saved_tests": 0,
+      "saved_runtime": 0.0
+    },
+    "AssertionAware+EarlyStop": {
+      "existing_detects_cases": 16,
+      "still_expanded": 0,
+      "false_expansion_rate": 0.0,
+      "saved_tests": 30,
+      "saved_runtime": 10.95
+    }
+  },
+  "weight_sensitivity": [
+    {
+      "alpha": 0.7,
+      "beta": 0.3,
+      "detection_rate": 0.8214,
+      "avg_test_count": 2.77,
+      "avg_relative_cost": 0.3631
+    },
+    {
+      "alpha": 0.5,
+      "beta": 0.5,
+      "detection_rate": 0.8214,
+      "avg_test_count": 2.77,
+      "avg_relative_cost": 0.3631
+    },
+    {
+      "alpha": 0.3,
+      "beta": 0.7,
+      "detection_rate": 0.8214,
+      "avg_test_count": 2.77,
+      "avg_relative_cost": 0.3631
+    }
+  ]
+}

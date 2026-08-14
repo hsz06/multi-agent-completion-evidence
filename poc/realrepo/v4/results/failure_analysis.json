@@ -1,0 +1,92 @@
+{
+  "type_counts": {
+    "B": 19,
+    "A": 37
+  },
+  "type_meaning": {
+    "A": "gap found + right test selected + detected",
+    "B": "gap correct but selected wrong test / missed (integration detects)",
+    "C": "no coverage gap (existing covers) but still can't detect (verifier insufficiency)",
+    "E": "integration also cannot detect (verification insufficient globally)",
+    "NO_BREAK": "no true break",
+    "OTHER": "uncategorized"
+  },
+  "examples": {
+    "B": [
+      {
+        "case_id": "tdc03",
+        "repo": "tinydb",
+        "claim": "dev_b_completion",
+        "gap": true,
+        "existing_detects": false,
+        "OA_detect": 0,
+        "Integration_detect": 1,
+        "OA_selected_extra": [
+          "tests/test_tables.py"
+        ]
+      },
+      {
+        "case_id": "tdc03",
+        "repo": "tinydb",
+        "claim": "testing_completion",
+        "gap": true,
+        "existing_detects": false,
+        "OA_detect": 0,
+        "Integration_detect": 1,
+        "OA_selected_extra": [
+          "tests/test_tables.py"
+        ]
+      },
+      {
+        "case_id": "tdc04",
+        "repo": "tinydb",
+        "claim": "dev_b_completion",
+        "gap": true,
+        "existing_detects": false,
+        "OA_detect": 0,
+        "Integration_detect": 1,
+        "OA_selected_extra": [
+          "tests/test_tables.py"
+        ]
+      }
+    ],
+    "A": [
+      {
+        "case_id": "tdc05",
+        "repo": "tinydb",
+        "claim": "dev_b_completion",
+        "gap": true,
+        "existing_detects": false,
+        "OA_detect": 1,
+        "Integration_detect": 1,
+        "OA_selected_extra": [
+          "tests/test_tables.py"
+        ]
+      },
+      {
+        "case_id": "tdc05",
+        "repo": "tinydb",
+        "claim": "testing_completion",
+        "gap": true,
+        "existing_detects": false,
+        "OA_detect": 1,
+        "Integration_detect": 1,
+        "OA_selected_extra": [
+          "tests/test_tables.py"
+        ]
+      },
+      {
+        "case_id": "tdc09",
+        "repo": "tinydb",
+        "claim": "testing_completion",
+        "gap": true,
+        "existing_detects": true,
+        "OA_detect": 1,
+        "Integration_detect": 1,
+        "OA_selected_extra": [
+          "tests/test_tables.py"
+        ]
+      }
+    ]
+  }
+}

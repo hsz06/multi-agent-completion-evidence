@@ -1,0 +1,18 @@
+{
+  "event": {
+    "event": "artifact_changed",
+    "artifact": "API_SCHEMA",
+    "old_version": 1,
+    "new_version": 2,
+    "change_type": "BREAKING",
+    "strategy": "change_aware",
+    "invalidated": [
+      "FRONTEND_COMPLETION",
+      "TESTING_COMPLETION"
+    ]
+  },
+  "global_completion_after_change": "NOT_READY",
+  "frontend_revalidation": "FAILED",
+  "global_false_completion": false,
+  "false_completion_prevented": true
+}

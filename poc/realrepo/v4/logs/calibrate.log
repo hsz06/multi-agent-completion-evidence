@@ -1,0 +1,91 @@
+== pool baseline (pristine) ==
+[baseline] tinydb/tests/test_tinydb.py: PASS 0.882s
+[baseline] tinydb/tests/test_utils.py: PASS 0.473s
+[baseline] tinydb/tests/test_tables.py: PASS 0.558s
+[baseline] tinydb/tests/test_operations.py: PASS 0.575s
+[baseline] tinydb/tests/test_queries.py: PASS 0.547s
+[baseline] tinydb/tests/test_storages.py: PASS 0.563s
+[baseline] tinydb/tests/test_middlewares.py: PASS 0.589s
+[baseline] cerberus/cerberus/tests/test_utils.py: PASS 0.204s
+[baseline] cerberus/cerberus/tests/test_validation.py: PASS 0.485s
+[baseline] cerberus/cerberus/tests/test_registries.py: PASS 0.228s
+[baseline] cerberus/cerberus/tests/test_errors.py: PASS 0.226s
+[baseline] cerberus/cerberus/tests/test_schema.py: PASS 0.215s
+[baseline] cerberus/cerberus/tests/test_assorted.py: PASS 0.194s
+[baseline] cerberus/cerberus/tests/test_legacy.py: FAIL 0.179s
+[baseline] cerberus/cerberus/tests/test_customization.py: PASS 0.185s
+[baseline] cerberus/cerberus/tests/test_normalization.py: PASS 0.353s
+[baseline] boltons/tests/test_typeutils.py: PASS 0.219s
+[baseline] boltons/tests/test_iterutils.py: PASS 0.313s
+[baseline] boltons/tests/test_funcutils.py: PASS 0.7s
+[baseline] boltons/tests/test_strutils.py: PASS 0.239s
+[baseline] boltons/tests/test_formatutils.py: PASS 0.187s
+[baseline] boltons/tests/test_listutils.py: PASS 0.277s
+[baseline] boltons/tests/test_dictutils.py: PASS 0.255s
+[baseline] boltons/tests/test_setutils.py: PASS 0.227s
+[baseline] boltons/tests/test_cacheutils.py: PASS 0.22s
+[baseline] boltons/tests/test_jsonutils.py: PASS 0.206s
+[baseline] toolz/toolz/tests/test_itertoolz.py: PASS 0.283s
+[baseline] toolz/toolz/tests/test_functoolz.py: PASS 0.276s
+[baseline] toolz/toolz/tests/test_dicttoolz.py: PASS 0.251s
+[baseline] toolz/toolz/tests/test_recipes.py: PASS 0.188s
+[baseline] toolz/toolz/tests/test_curried.py: PASS 0.2s
+[baseline] toolz/toolz/tests/test_compatibility.py: PASS 0.179s
+[baseline] toolz/toolz/tests/test_signatures.py: PASS 0.194s
+[baseline] toolz/toolz/tests/test_utils.py: PASS 0.176s
+[baseline] pyparsing/tests/test_simple_unit.py: PASS 0.275s
+[baseline] pyparsing/tests/test_util.py: PASS 2.42s
+[baseline] pyparsing/tests/test_testing.py: PASS 0.238s
+[baseline] pyparsing/tests/test_pep8_converter.py: PASS 0.277s
+[baseline] pyparsing/tests/test_pre_pep8_deprecation_warnings.py: PASS 0.301s
+== per-file held-out oracle (mutated) ==
+[per_file] Tc01: 0 failing files
+[per_file] Tc02: 0 failing files
+[per_file] Tc03: 1 failing files
+[per_file] Tc04: 1 failing files
+[per_file] Tc05: 4 failing files
+[per_file] Tc06: 0 failing files
+[per_file] Tc08: 0 failing files
+[per_file] Tc09: 2 failing files
+[per_file] Tc10: 7 failing files
+[per_file] Cc01: 1 failing files
+[per_file] Cc02: 1 failing files
+[per_file] Cc03: 8 failing files
+[per_file] Cc04: 2 failing files
+[per_file] Cc05: 6 failing files
+[per_file] Cc06: 1 failing files
+[per_file] Cc07: 8 failing files
+[per_file] Cc08: 1 failing files
+[per_file] Cc09: 2 failing files
+[per_file] Cc10: 8 failing files
+[per_file] Bc01: 0 failing files
+[per_file] Bc02: 0 failing files
+[per_file] Bc03: 0 failing files
+[per_file] Bc04: 0 failing files
+[per_file] Bc05: 0 failing files
+[per_file] Bc06: 0 failing files
+[per_file] Bc07: 1 failing files
+[per_file] Bc08: 0 failing files
+[per_file] Bc09: 1 failing files
+[per_file] Bc10: 1 failing files
+[per_file] Tc01: 0 failing files
+[per_file] Tc02: 0 failing files
+[per_file] Tc03: 1 failing files
+[per_file] Tc04: 8 failing files
+[per_file] Tc05: 2 failing files
+[per_file] Tc06: 0 failing files
+[per_file] Tc07: 8 failing files
+[per_file] Tc08: 1 failing files
+[per_file] Tc09: 2 failing files
+[per_file] Tc10: 1 failing files
+[per_file] Pc01: 0 failing files
+[per_file] Pc02: 0 failing files
+[per_file] Pc03: 1 failing files
+[per_file] Pc04: 1 failing files
+[per_file] Pc05: 5 failing files
+[per_file] Pc06: 0 failing files
+[per_file] Pc07: 0 failing files
+[per_file] Pc08: 0 failing files
+[per_file] Pc09: 0 failing files
+[per_file] Pc10: 0 failing files
+done in 186.4s

@@ -1,0 +1,90 @@
+{
+  "n_cases": 56,
+  "gap_positive": 56,
+  "aggregate": {
+    "Local": {
+      "detection_rate": 0.2857,
+      "vrr": 0.2857,
+      "avg_test_count": 1.0,
+      "total_runtime": 15.399,
+      "avg_relative_cost": 0.1117
+    },
+    "DependencyOnly": {
+      "detection_rate": 0.2857,
+      "vrr": 0.2857,
+      "avg_test_count": 1.0,
+      "total_runtime": 15.399,
+      "avg_relative_cost": 0.1117
+    },
+    "ObligationAware": {
+      "detection_rate": 0.6607,
+      "vrr": 0.6607,
+      "avg_test_count": 2.05,
+      "total_runtime": 33.205,
+      "avg_relative_cost": 0.234
+    },
+    "IntegrationAll": {
+      "detection_rate": 1.0,
+      "vrr": 1.0,
+      "avg_test_count": 8.07,
+      "total_runtime": 140.024,
+      "avg_relative_cost": 1.0
+    }
+  },
+  "failure_type_counts": {
+    "B": 19,
+    "A": 37
+  },
+  "per_repo": {
+    "tinydb": {
+      "n": 10,
+      "det_OA": 5,
+      "det_Int": 10,
+      "det_Local": 3,
+      "n_break": 10,
+      "OA_detection_rate": 0.5,
+      "Int_detection_rate": 1.0,
+      "Local_detection_rate": 0.3
+    },
+    "cerberus": {
+      "n": 20,
+      "det_OA": 8,
+      "det_Int": 20,
+      "det_Local": 7,
+      "n_break": 20,
+      "OA_detection_rate": 0.4,
+      "Int_detection_rate": 1.0,
+      "Local_detection_rate": 0.35
+    },
+    "boltons": {
+      "n": 6,
+      "det_OA": 6,
+      "det_Int": 6,
+      "det_Local": 0,
+      "n_break": 6,
+      "OA_detection_rate": 1.0,
+      "Int_detection_rate": 1.0,
+      "Local_detection_rate": 0.0
+    },
+    "toolz": {
+      "n": 14,
+      "det_OA": 12,
+      "det_Int": 14,
+      "det_Local": 4,
+      "n_break": 14,
+      "OA_detection_rate": 0.8571,
+      "Int_detection_rate": 1.0,
+      "Local_detection_rate": 0.2857
+    },
+    "pyparsing": {
+      "n": 6,
+      "det_OA": 6,
+      "det_Int": 6,
+      "det_Local": 2,
+      "n_break": 6,
+      "OA_detection_rate": 1.0,
+      "Int_detection_rate": 1.0,
+      "Local_detection_rate": 0.3333
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "v41_missed": 10,
+  "hybrid_rescued": 0,
+  "private_rescued": 0,
+  "semantic_rescue_rate": 0.0,
+  "private_contract_rescue_rate": 0.0,
+  "hybrid_missed_breakdown": [
+    {
+      "case_id": "cec01",
+      "repo": "cerberus",
+      "claim": "dev_b_completion",
+      "symbol": "dummy_for_rule_validation",
+      "failure_class": "C"
+    },
+    {
+      "case_id": "cec01",
+      "repo": "cerberus",
+      "claim": "testing_completion",
+      "symbol": "dummy_for_rule_validation",
+      "failure_class": "C"
+    },
+    {
+      "case_id": "cec02",
+      "repo": "cerberus",
+      "claim": "dev_b_completion",
+      "symbol": "BareValidator.clear_caches",
+      "failure_class": "C"
+    },
+    {
+      "case_id": "cec02",
+      "repo": "cerberus",
+      "claim": "testing_completion",
+      "symbol": "BareValidator.clear_caches",
+      "failure_class": "C"
+    },
+    {
+      "case_id": "cec06",
+      "repo": "cerberus",
+      "claim": "dev_b_completion",
+      "symbol": "BareValidator.ignore_none_values",
+      "failure_class": "C"
+    },
+    {
+      "case_id": "cec06",
+      "repo": "cerberus",
+      "claim": "testing_completion",
+      "symbol": "BareValidator.ignore_none_values",
+      "failure_class": "C"
+    },
+    {
+      "case_id": "cec08",
+      "repo": "cerberus",
+      "claim": "dev_b_completion",
+      "symbol": "BareValidator.purge_unknown",
+      "failure_class": "C"
+    },
+    {
+      "case_id": "cec08",
+      "repo": "cerberus",
+      "claim": "testing_completion",
+      "symbol": "BareValidator.purge_unknown",
+      "failure_class": "C"
+    },
+    {
+      "case_id": "tzc08",
+      "repo": "toolz",
+      "claim": "dev_b_completion",
+      "symbol": "isdistinct",
+      "failure_class": "C"
+    },
+    {
+      "case_id": "tzc08",
+      "repo": "toolz",
+      "claim": "testing_completion",
+      "symbol": "isdistinct",
+      "failure_class": "C"
+    }
+  ]
+}

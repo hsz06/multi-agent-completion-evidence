@@ -1,0 +1,8 @@
+strategy,detection_rate,vrr,avg_test_count,avg_relative_cost,early_stop_hits,llm_calls,llm_invocation_rate,per_repo
+Local,0.2857,0.2857,1.0,0.1117,0,0,0.0,"{""tinydb"": 0.3, ""cerberus"": 0.35, ""boltons"": 0.0, ""toolz"": 0.2857, ""pyparsing"": 0.3333}"
+IntegrationAll,1.0,1.0,8.07,1.0,0,0,0.0,"{""tinydb"": 1.0, ""cerberus"": 1.0, ""boltons"": 1.0, ""toolz"": 1.0, ""pyparsing"": 1.0}"
+v4.1 (AssertionTop1+EarlyStop),0.8214,0.8214,1.71,0.2257,56,0,0.0,"{""tinydb"": 1.0, ""cerberus"": 0.6, ""boltons"": 1.0, ""toolz"": 0.8571, ""pyparsing"": 1.0}"
+PrivateContract,0.8214,0.8214,1.71,0.2257,56,0,0.0,"{""tinydb"": 1.0, ""cerberus"": 0.6, ""boltons"": 1.0, ""toolz"": 0.8571, ""pyparsing"": 1.0}"
+LLMOnly,0.5357,0.5357,1.71,0.1881,56,31,0.5536,"{""tinydb"": 0.5, ""cerberus"": 0.4, ""boltons"": 1.0, ""toolz"": 0.5, ""pyparsing"": 0.6667}"
+Hybrid,0.8214,0.8214,1.71,0.2233,56,31,0.5536,"{""tinydb"": 1.0, ""cerberus"": 0.6, ""boltons"": 1.0, ""toolz"": 0.8571, ""pyparsing"": 1.0}"
+HybridTop2,0.8393,0.8393,2.29,0.2952,56,31,0.5536,"{""tinydb"": 1.0, ""cerberus"": 0.6, ""boltons"": 1.0, ""toolz"": 0.9286, ""pyparsing"": 1.0}"

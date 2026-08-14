@@ -1,0 +1,51 @@
+{
+  "trajectory_source": "real_llm_agent",
+  "n_trajectories": 3,
+  "n_stale_after_followup": 3,
+  "real_llm_stale_rate": 1.0,
+  "note": "Pilot only (n=3). Real-LLM agent self-reported a completion; a deterministic follow-up breaking change to a shared contract made the agent's own verify-set FAIL (stale completion). Not statistically representative \u2014 feasibility evidence.",
+  "trajectories": [
+    {
+      "trajectory_id": "real-llm-001",
+      "trajectory_source": "real_llm_agent",
+      "model": "claude-coding-subagent",
+      "prompt_version": "v3-pilot-v1",
+      "repo": "tinydb",
+      "agent_completion_tests_passed": true,
+      "follow_up_change": "tinydb/table.py::Table.search CHANGE_RETURN_TYPE",
+      "follow_up_source": "deterministic",
+      "agent_verify_set_after_followup": "FAIL",
+      "tests_failed_after_followup": 42,
+      "completion_went_stale": true,
+      "natural_gfc_candidate": true
+    },
+    {
+      "trajectory_id": "real-llm-002",
+      "trajectory_source": "real_llm_agent",
+      "model": "claude-coding-subagent",
+      "prompt_version": "v3-pilot-v1",
+      "repo": "toolz",
+      "agent_completion_tests_passed": true,
+      "follow_up_change": "toolz/itertoolz.py::groupby CHANGE_RETURN_TYPE",
+      "follow_up_source": "deterministic",
+      "agent_verify_set_after_followup": "FAIL",
+      "tests_failed_after_followup": 8,
+      "completion_went_stale": true,
+      "natural_gfc_candidate": true
+    },
+    {
+      "trajectory_id": "real-llm-003",
+      "trajectory_source": "real_llm_agent",
+      "model": "claude-coding-subagent",
+      "prompt_version": "v3-pilot-v1",
+      "repo": "boltons",
+      "agent_completion_tests_passed": true,
+      "follow_up_change": "boltons/iterutils.py::is_iterable ADD_REQUIRED_PARAM",
+      "follow_up_source": "deterministic",
+      "agent_verify_set_after_followup": "FAIL",
+      "tests_failed_after_followup": 4,
+      "completion_went_stale": true,
+      "natural_gfc_candidate": true
+    }
+  ]
+}

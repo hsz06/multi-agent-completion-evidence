@@ -1,0 +1,4 @@
+alpha,beta,detection_rate,avg_test_count,avg_relative_cost
+0.7,0.3,0.8214,2.77,0.3631
+0.5,0.5,0.8214,2.77,0.3631
+0.3,0.7,0.8214,2.77,0.3631

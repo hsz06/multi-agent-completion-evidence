@@ -1,0 +1,7 @@
+strategy,granularity,precision,recall,f1,false_invalidation_rate,revalidation_count
+all_downstream,file,0.1562,1.0,0.2703,1.0,96
+static_file,file,0.1974,1.0,0.3297,0.7531,76
+freshness,file,0.1974,1.0,0.3297,0.7531,76
+change_aware_file,file,0.4545,0.6667,0.5405,0.1481,22
+static_contract,contract,1.0,1.0,1.0,0.0,15
+change_aware_contract,contract,1.0,1.0,1.0,0.0,15

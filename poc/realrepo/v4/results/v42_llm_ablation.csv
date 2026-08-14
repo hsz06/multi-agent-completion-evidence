@@ -1,0 +1,4 @@
+prompt_variant,n_sample,detection_rate,total_tokens
+A,8,0.0,7354
+B,8,0.0,13278
+C,8,0.0,9502

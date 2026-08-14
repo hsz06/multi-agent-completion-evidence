@@ -1,0 +1,4 @@
+threshold,detection_rate,vrr,avg_test_count,avg_relative_cost
+0.6,0.6429,0.6429,1.7,0.2006
+0.8,0.6607,0.6607,2.05,0.234
+1.0,0.8214,0.8214,2.77,0.3631

@@ -1,0 +1,47 @@
+{
+  "repos": {
+    "tinydb": {
+      "source": "github.com/msiemens/tinydb (shallow clone)", "commit": "4aa5311",
+      "language": "Python", "loc": 1200, "source_files": 7, "test_files": 7,
+      "test_command": "python3 -m pytest", "test_runtime_s": 0.6,
+      "v2_legacy": true, "dependency_richness": "database->table->queries/operations; public API->consumer",
+      "notes": "pure-python, package-at-root, 3.9-compatible"
+    },
+    "cerberus": {
+      "source": "github.com/pyeve/cerberus (shallow clone)", "commit": "65e977d",
+      "language": "Python", "loc": 2100, "source_files": 5, "test_files": 5,
+      "test_command": "python3 -m pytest cerberus/tests", "test_runtime_s": 0.4,
+      "v2_legacy": true, "dependency_richness": "schema->validator; validation rule->consumer; error->consumer",
+      "notes": "package-at-root, ignore benchmarks/"
+    },
+    "boltons": {
+      "source": "github.com/mahmoud/boltons (shallow clone)", "commit": "580a9c2",
+      "language": "Python", "loc": 4600, "source_files": 20, "test_files": 13,
+      "test_command": "python3 -m pytest", "test_runtime_s": 3.3,
+      "v2_legacy": true, "dependency_richness": "typeutils.make_sentinel->iterutils; iterutils.is_iterable/chunked->consumers",
+      "notes": "package-at-root, lazy cross-module imports"
+    },
+    "toolz": {
+      "source": "github.com/pytoolz/toolz (shallow clone)", "commit": "568c2b8",
+      "language": "Python", "loc": 2600, "source_files": 9, "test_files": 8,
+      "test_command": "python3 -m pytest --ignore=toolz/tests/test_package.py", "test_runtime_s": 0.3,
+      "v2_legacy": false, "dependency_richness": "itertoolz/functoolz/dicttoolz currying; curry->compose->consumer; public API->consumer",
+      "test_ignore": "toolz/tests/test_package.py (PackageNotFoundError: toolz not pip-installed; metadata-only test, environmental)",
+      "notes": "package-at-root, zero runtime deps, 3.9-compatible, 185 functional tests pass"
+    },
+    "pyparsing": {
+      "source": "github.com/pyparsing/pyparsing (shallow clone)", "commit": "038ff39",
+      "language": "Python", "loc": 4200, "source_files": 6, "test_files": 30,
+      "test_command": "python3 -m pytest --ignore=tests/test_diagram.py", "test_runtime_s": 26.0,
+      "v2_legacy": false, "dependency_richness": "ParserElement API->Grammar actions/consumers; ParseResults->consumer; public symbol->downstream",
+      "test_ignore": "tests/test_diagram.py (ImportError on optional viz dep; environmental)",
+      "notes": "package-at-root, zero runtime deps, 3.9-compatible, 2110 tests pass; verify-sets use focused subsets to bound runtime"
+    }
+  },
+  "qualification": {
+    "repos_total": 5,
+    "all_tests_stably_runnable": true,
+    "test_environment": "python3.9 (system); no extra deps required for any repo",
+    "new_repo_selection_criterion": "contract dependency richness + zero-dep + 3.9-compat, not LOC"
+  }
+}

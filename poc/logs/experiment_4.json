@@ -1,0 +1,320 @@
+{
+  "badcase": {
+    "run_id": "run-missing-frontend-dep-0001",
+    "changed_artifact": "API_SCHEMA",
+    "old_version": 1,
+    "new_version": 2,
+    "change_type": "BREAKING",
+    "new_content": {
+      "fields": {
+        "username": "string",
+        "age": "int"
+      },
+      "required": [
+        "username",
+        "age"
+      ]
+    },
+    "completion_claims_before_change": {
+      "BACKEND_COMPLETION": {
+        "status": "VERIFIED",
+        "agent_id": "agent-backend",
+        "based_on_artifact_versions": {
+          "API_SCHEMA": 1,
+          "BACKEND_CODE": 1
+        }
+      },
+      "FRONTEND_COMPLETION": {
+        "status": "VERIFIED",
+        "agent_id": "agent-frontend",
+        "based_on_artifact_versions": {
+          "API_SCHEMA": 1
+        }
+      },
+      "TESTING_COMPLETION": {
+        "status": "VERIFIED",
+        "agent_id": "agent-testing",
+        "based_on_artifact_versions": {
+          "API_SCHEMA": 1
+        }
+      }
+    },
+    "completion_claims_after_change": {
+      "BACKEND_COMPLETION": {
+        "status": "VERIFIED",
+        "agent_id": "agent-backend",
+        "based_on_artifact_versions": {
+          "API_SCHEMA": 1,
+          "BACKEND_CODE": 1
+        }
+      },
+      "FRONTEND_COMPLETION": {
+        "status": "VERIFIED",
+        "agent_id": "agent-frontend",
+        "based_on_artifact_versions": {
+          "API_SCHEMA": 1
+        }
+      },
+      "TESTING_COMPLETION": {
+        "status": "VERIFIED",
+        "agent_id": "agent-testing",
+        "based_on_artifact_versions": {
+          "API_SCHEMA": 2
+        }
+      }
+    },
+    "hidden_test_result": "FAILED",
+    "global_completion": "VERIFIED",
+    "global_false_completion": true,
+    "current_dependencies": [
+      {
+        "source": "API_SCHEMA",
+        "target": "TESTING_COMPLETION",
+        "relation_type": "artifact->claim",
+        "scope": [
+          "BREAKING"
+        ]
+      }
+    ],
+    "strategy": "change_aware",
+    "world_snapshot": {
+      "strategy": "change_aware",
+      "artifacts": {
+        "API_SCHEMA": {
+          "artifact_id": "API_SCHEMA",
+          "artifact_type": "api_schema",
+          "version": 1,
+          "content_hash": "64f7680e1e8d",
+          "producer_task": "task-backend",
+          "metadata": {
+            "endpoint": "/user"
+          },
+          "content": {
+            "fields": {
+              "name": "string",
+              "age": "int"
+            },
+            "required": [
+              "name",
+              "age"
+            ]
+          }
+        },
+        "BACKEND_CODE": {
+          "artifact_id": "BACKEND_CODE",
+          "artifact_type": "backend_code",
+          "version": 1,
+          "content_hash": "3377be9aca97",
+          "producer_task": "task-backend",
+          "metadata": {},
+          "content": "def get_user():\n    logger.info(\"serving /user\")\n    return {\"name\": \"hsz\", \"age\": 25}\n"
+        },
+        "FRONTEND_CODE": {
+          "artifact_id": "FRONTEND_CODE",
+          "artifact_type": "frontend_code",
+          "version": 1,
+          "content_hash": "06f396255849",
+          "producer_task": "task-frontend",
+          "metadata": {
+            "consumes_fields": [
+              "name"
+            ]
+          },
+          "content": "def render_profile(user):\n    return f\"<h1>{user['name']}</h1>\"\n"
+        },
+        "TEST_SUITE": {
+          "artifact_id": "TEST_SUITE",
+          "artifact_type": "test_suite",
+          "version": 1,
+          "content_hash": "f966945715f7",
+          "producer_task": "task-testing",
+          "metadata": {},
+          "content": {
+            "name": "user_api_contract",
+            "assertions": [
+              "response has field 'age'",
+              "response has field 'name'"
+            ]
+          }
+        }
+      },
+      "claims": {
+        "BACKEND_COMPLETION": {
+          "claim_id": "BACKEND_COMPLETION",
+          "task_id": "task-backend",
+          "agent_id": "agent-backend",
+          "status": "VERIFIED",
+          "evidence_ids": [
+            "EV-backend-unit-v1"
+          ],
+          "based_on_artifact_versions": {
+            "API_SCHEMA": 1,
+            "BACKEND_CODE": 1
+          }
+        },
+        "FRONTEND_COMPLETION": {
+          "claim_id": "FRONTEND_COMPLETION",
+          "task_id": "task-frontend",
+          "agent_id": "agent-frontend",
+          "status": "VERIFIED",
+          "evidence_ids": [
+            "EV-frontend-fieldcheck-v1",
+            "EV-frontend-reval-v1-fail"
+          ],
+          "based_on_artifact_versions": {
+            "API_SCHEMA": 1
+          }
+        },
+        "TESTING_COMPLETION": {
+          "claim_id": "TESTING_COMPLETION",
+          "task_id": "task-testing",
+          "agent_id": "agent-testing",
+          "status": "VERIFIED",
+          "evidence_ids": [
+            "EV-testing-1",
+            "EV-testing-1",
+            "EV-testing-1"
+          ],
+          "based_on_artifact_versions": {
+            "API_SCHEMA": 1
+          }
+        }
+      },
+      "evidences": {
+        "EV-backend-unit-v1": {
+          "evidence_id": "EV-backend-unit-v1",
+          "evidence_type": "unit_test",
+          "target_artifact": "BACKEND_CODE",
+          "artifact_version": 1,
+          "result": "PASS",
+          "created_by": "agent-backend"
+        },
+        "EV-frontend-fieldcheck-v1": {
+          "evidence_id": "EV-frontend-fieldcheck-v1",
+          "evidence_type": "field_check",
+          "target_artifact": "FRONTEND_CODE",
+          "artifact_version": 1,
+          "result": "PASS",
+          "created_by": "agent-frontend"
+        },
+        "EV-testing-1": {
+          "evidence_id": "EV-testing-1",
+          "evidence_type": "contract_test",
+          "target_artifact": "TEST_SUITE",
+          "artifact_version": 1,
+          "result": "PASS",
+          "created_by": "agent-testing"
+        }
+      },
+      "tasks": {
+        "task-backend": {
+          "task_id": "task-backend",
+          "owner_agent": "agent-backend",
+          "status": "VERIFIED",
+          "version": 1
+        },
+        "task-frontend": {
+          "task_id": "task-frontend",
+          "owner_agent": "agent-frontend",
+          "status": "VERIFIED",
+          "version": 1
+        },
+        "task-testing": {
+          "task_id": "task-testing",
+          "owner_agent": "agent-testing",
+          "status": "VERIFIED",
+          "version": 1
+        }
+      },
+      "dependencies": [
+        {
+          "source": "API_SCHEMA",
+          "target": "TESTING_COMPLETION",
+          "relation_type": "artifact->claim",
+          "scope": [
+            "BREAKING"
+          ]
+        }
+      ]
+    }
+  },
+  "candidates": [
+    {
+      "source": "API_SCHEMA",
+      "target": "FRONTEND_COMPLETION",
+      "relation_type": "artifact->claim",
+      "scope": [
+        "BREAKING"
+      ],
+      "reason": "Frontend completion was VERIFIED against API_SCHEMA v1 and consumes it, but API_SCHEMA changed to v2 (BREAKING) without invalidating the claim — no dependency edge covers it."
+    }
+  ],
+  "replay_without_patch": {
+    "patched": false,
+    "invalidated": [
+      "TESTING_COMPLETION"
+    ],
+    "revalidated": {
+      "TESTING_COMPLETION": "VERIFIED"
+    },
+    "global_completion": "VERIFIED",
+    "hidden_test_result": "FAILED",
+    "global_false_completion": true
+  },
+  "replay_with_patch": {
+    "patched": true,
+    "invalidated": [
+      "TESTING_COMPLETION",
+      "FRONTEND_COMPLETION"
+    ],
+    "revalidated": {
+      "TESTING_COMPLETION": "VERIFIED",
+      "FRONTEND_COMPLETION": "FAILED"
+    },
+    "global_completion": "FAILED",
+    "hidden_test_result": "FAILED",
+    "global_false_completion": false
+  },
+  "candidate_prevented_failure": true,
+  "regression": {
+    "cases": [
+      {
+        "case_id": "caseA_harmless_log",
+        "change_type": "NON_SEMANTIC",
+        "invalidated": [],
+        "ground_truth": [],
+        "correct": true
+      },
+      {
+        "case_id": "caseB_breaking_rename",
+        "change_type": "BREAKING",
+        "invalidated": [
+          "FRONTEND_COMPLETION",
+          "TESTING_COMPLETION"
+        ],
+        "ground_truth": [
+          "FRONTEND_COMPLETION",
+          "TESTING_COMPLETION"
+        ],
+        "correct": true
+      },
+      {
+        "case_id": "caseC_optional_field",
+        "change_type": "BACKWARD_COMPATIBLE",
+        "invalidated": [],
+        "ground_truth": [],
+        "correct": true
+      }
+    ],
+    "tp": 2,
+    "fp": 0,
+    "fn": 0,
+    "tn": 4,
+    "invalidation_precision": 1.0,
+    "invalidation_recall": 1.0,
+    "false_invalidation_rate": 0.0,
+    "fir_threshold": 0.2,
+    "passes": true
+  },
+  "patch_decision": "ACCEPTED"
+}

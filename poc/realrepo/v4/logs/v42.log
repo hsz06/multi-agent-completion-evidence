@@ -1,0 +1,17 @@
+/Users/hsz/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[v4.2] cases=56 llm_available=True
+
+Strategy                               Det   VRR   #T   Cost   LLM
+Local                                0.286 0.286 1.00  0.112     0
+IntegrationAll                       1.000 1.000 8.07  1.000     0
+v4.1 (AssertionTop1+EarlyStop)       0.821 0.821 1.71  0.226     0
+PrivateContract                      0.821 0.821 1.71  0.226     0
+LLMOnly                              0.536 0.536 1.71  0.188    31
+Hybrid                               0.821 0.821 1.71  0.223    31
+HybridTop2                           0.839 0.839 2.29  0.295    31
+
+Rescue: v41_missed=10 hybrid_rescued=0 SRR=0.0 PCRR=0.0
+LLM invocations: 241 (rate 4.30)
+failure breakdown: Counter({'C': 10})
+[done] v4.2 in 1805.4s

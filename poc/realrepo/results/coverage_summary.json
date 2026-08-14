@@ -1,0 +1,20 @@
+{
+  "LOW": {
+    "regime": "LOW",
+    "config": "base",
+    "gfcr": 0.3333,
+    "n_cases": 6,
+    "n_badcases": 3,
+    "recovered": 3,
+    "recovery_rate": 1.0
+  },
+  "HIGH": {
+    "regime": "HIGH",
+    "config": "extended",
+    "gfcr": 0.0,
+    "n_cases": 6,
+    "n_badcases": 3,
+    "recovered": 3,
+    "recovery_rate": 1.0
+  }
+}

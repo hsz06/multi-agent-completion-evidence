@@ -1,0 +1,13 @@
+regime,strategy,detection_rate,avg_test_count,avg_relative_cost
+LOCAL,Local,0.2857,1.0,0.1117
+LOCAL,DependencyOnly,0.2857,1.0,0.1117
+LOCAL,ObligationAware,0.6607,2.05,0.234
+LOCAL,IntegrationAll,1.0,8.07,1.0
+MODULE,Local,0.4107,2.0,0.2256
+MODULE,DependencyOnly,0.4107,2.0,0.2256
+MODULE,ObligationAware,0.6607,2.73,0.3068
+MODULE,IntegrationAll,1.0,8.07,1.0
+INTEGRATION,Local,0.5714,3.0,0.4304
+INTEGRATION,DependencyOnly,0.5714,3.0,0.4304
+INTEGRATION,ObligationAware,0.7321,3.32,0.4723
+INTEGRATION,IntegrationAll,1.0,8.07,1.0

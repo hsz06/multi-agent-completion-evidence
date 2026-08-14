@@ -1,0 +1,162 @@
+{
+  "repo": "tinydb",
+  "config": "extended",
+  "edges": [
+    {
+      "source": "tinydb/__init__.py",
+      "target": "tinydb/queries.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import tinydb.queries"
+    },
+    {
+      "source": "tinydb/__init__.py",
+      "target": "tinydb/storages.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import tinydb.storages"
+    },
+    {
+      "source": "tinydb/__init__.py",
+      "target": "tinydb/database.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import tinydb.database"
+    },
+    {
+      "source": "tinydb/__init__.py",
+      "target": "tinydb/version.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import tinydb.version"
+    },
+    {
+      "source": "tinydb/database.py",
+      "target": "tinydb/storages.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import tinydb.storages"
+    },
+    {
+      "source": "tinydb/database.py",
+      "target": "tinydb/table.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import tinydb.table"
+    },
+    {
+      "source": "tinydb/database.py",
+      "target": "tinydb/utils.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import tinydb.utils"
+    },
+    {
+      "source": "tinydb/queries.py",
+      "target": "tinydb/utils.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import tinydb.utils"
+    },
+    {
+      "source": "tinydb/table.py",
+      "target": "tinydb/queries.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import tinydb.queries"
+    },
+    {
+      "source": "tinydb/table.py",
+      "target": "tinydb/storages.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import tinydb.storages"
+    },
+    {
+      "source": "tinydb/table.py",
+      "target": "tinydb/utils.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import tinydb.utils"
+    },
+    {
+      "source": ".readthedocs.yaml",
+      "target": "tinydb/queries.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.6,
+      "provenance": "STATIC",
+      "note": "config referenced by tinydb/queries.py"
+    },
+    {
+      "source": "tinydb/table.py",
+      "target": "testing_completion",
+      "relation_type": "ARTIFACT->COMPLETION",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "note": "oracle: T2_all_breaks broke testing verify-set"
+    }
+  ]
+}

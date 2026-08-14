@@ -1,0 +1,15 @@
+== building verification pool (pristine line-level coverage) ==
+pool sizes: {'tinydb': 7, 'cerberus': 9, 'boltons': 10, 'toolz': 8, 'pyparsing': 5}
+== running v4 experiments ==
+[v4] cases=56 gap_positive=56
+
+Strategy            Detection     VRR  #Tests  RelCost
+Local                   0.286   0.286    1.00    0.112
+DependencyOnly          0.286   0.286    1.00    0.112
+ObligationAware         0.661   0.661    2.05    0.234
+IntegrationAll          1.000   1.000    8.07    1.000
+
+failure types: {'B': 19, 'A': 37}
+per-repo OA/Int/Local detection: {'tinydb': (0.5, 1.0, 0.3), 'cerberus': (0.4, 1.0, 0.35), 'boltons': (1.0, 1.0, 0.0), 'toolz': (0.8571, 1.0, 0.2857), 'pyparsing': (1.0, 1.0, 0.3333)}
+
+[done] 39.1s

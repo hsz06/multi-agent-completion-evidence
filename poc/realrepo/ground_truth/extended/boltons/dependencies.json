@@ -1,0 +1,270 @@
+{
+  "repo": "boltons",
+  "config": "extended",
+  "edges": [
+    {
+      "source": "boltons/cacheutils.py",
+      "target": "boltons/typeutils.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import boltons.typeutils"
+    },
+    {
+      "source": "boltons/debugutils.py",
+      "target": "boltons/typeutils.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import boltons.typeutils"
+    },
+    {
+      "source": "boltons/dictutils.py",
+      "target": "boltons/typeutils.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import boltons.typeutils"
+    },
+    {
+      "source": "boltons/funcutils.py",
+      "target": "boltons/typeutils.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import boltons.typeutils"
+    },
+    {
+      "source": "boltons/iterutils.py",
+      "target": "boltons/typeutils.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import boltons.typeutils"
+    },
+    {
+      "source": "boltons/listutils.py",
+      "target": "boltons/typeutils.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import boltons.typeutils"
+    },
+    {
+      "source": "boltons/queueutils.py",
+      "target": "boltons/typeutils.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import boltons.typeutils"
+    },
+    {
+      "source": "boltons/queueutils.py",
+      "target": "boltons/listutils.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import boltons.listutils"
+    },
+    {
+      "source": "boltons/setutils.py",
+      "target": "boltons/typeutils.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import boltons.typeutils"
+    },
+    {
+      "source": "boltons/socketutils.py",
+      "target": "boltons/typeutils.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import boltons.typeutils"
+    },
+    {
+      "source": "boltons/tableutils.py",
+      "target": "boltons/typeutils.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import boltons.typeutils"
+    },
+    {
+      "source": "boltons/urlutils.py",
+      "target": "boltons/typeutils.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import boltons.typeutils"
+    },
+    {
+      "source": "boltons/urlutils.py",
+      "target": "boltons/dictutils.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import boltons.dictutils"
+    },
+    {
+      "source": "docs/conf.py",
+      "target": "boltons/funcutils.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import boltons.funcutils"
+    },
+    {
+      "source": "misc/table_html_app.py",
+      "target": "boltons/tableutils.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.95,
+      "provenance": "STATIC",
+      "note": "import boltons.tableutils"
+    },
+    {
+      "source": ".readthedocs.yaml",
+      "target": "boltons/timeutils.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.6,
+      "provenance": "STATIC",
+      "note": "config referenced by boltons/timeutils.py"
+    },
+    {
+      "source": ".readthedocs.yaml",
+      "target": "boltons/urlutils.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.6,
+      "provenance": "STATIC",
+      "note": "config referenced by boltons/urlutils.py"
+    },
+    {
+      "source": ".readthedocs.yaml",
+      "target": "misc/linkify_changelog.py",
+      "relation_type": "FILE->FILE",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 0.6,
+      "provenance": "STATIC",
+      "note": "config referenced by misc/linkify_changelog.py"
+    },
+    {
+      "source": "boltons/typeutils.py",
+      "target": "agent_b_completion",
+      "relation_type": "ARTIFACT->COMPLETION",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "note": "oracle: B2_sentinel_required broke agent_b verify-set"
+    },
+    {
+      "source": "boltons/typeutils.py",
+      "target": "testing_completion",
+      "relation_type": "ARTIFACT->COMPLETION",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "note": "oracle: B2_sentinel_required broke testing verify-set"
+    },
+    {
+      "source": "boltons/iterutils.py",
+      "target": "agent_b_completion",
+      "relation_type": "ARTIFACT->COMPLETION",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "note": "oracle: B4_rename_isiterable broke agent_b verify-set"
+    },
+    {
+      "source": "boltons/iterutils.py",
+      "target": "testing_completion",
+      "relation_type": "ARTIFACT->COMPLETION",
+      "scope": [
+        "BREAKING",
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "note": "oracle: B4_rename_isiterable broke testing verify-set"
+    }
+  ]
+}

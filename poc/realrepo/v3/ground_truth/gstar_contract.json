@@ -1,0 +1,808 @@
+{
+  "edges": [
+    {
+      "source": "tinydb/table.py::FUNCTION_SIGNATURE::Table.insert",
+      "target": "dev_a_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Tc03 broke dev_a_completion@INTEGRATION"
+    },
+    {
+      "source": "tinydb/table.py",
+      "target": "dev_a_completion",
+      "relation_type": "ARTIFACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "FILE",
+      "note": "oracle: Tc03 broke dev_a_completion@INTEGRATION"
+    },
+    {
+      "source": "tinydb/table.py::FUNCTION_SIGNATURE::Table.insert",
+      "target": "testing_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Tc03 broke testing_completion@INTEGRATION"
+    },
+    {
+      "source": "tinydb/table.py",
+      "target": "testing_completion",
+      "relation_type": "ARTIFACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "FILE",
+      "note": "oracle: Tc03 broke testing_completion@INTEGRATION"
+    },
+    {
+      "source": "tinydb/table.py::FUNCTION_SIGNATURE::Table.insert_multiple",
+      "target": "dev_a_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Tc04 broke dev_a_completion@INTEGRATION"
+    },
+    {
+      "source": "tinydb/table.py::FUNCTION_SIGNATURE::Table.insert_multiple",
+      "target": "testing_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Tc04 broke testing_completion@INTEGRATION"
+    },
+    {
+      "source": "tinydb/table.py::FUNCTION_SIGNATURE::Table.all",
+      "target": "dev_a_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Tc05 broke dev_a_completion@INTEGRATION"
+    },
+    {
+      "source": "tinydb/table.py::FUNCTION_SIGNATURE::Table.all",
+      "target": "dev_b_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Tc05 broke dev_b_completion@INTEGRATION"
+    },
+    {
+      "source": "tinydb/table.py",
+      "target": "dev_b_completion",
+      "relation_type": "ARTIFACT->COMPLETION",
+      "scope": [
+        "BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "FILE",
+      "note": "oracle: Tc05 broke dev_b_completion@INTEGRATION"
+    },
+    {
+      "source": "tinydb/table.py::FUNCTION_SIGNATURE::Table.all",
+      "target": "testing_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Tc05 broke testing_completion@INTEGRATION"
+    },
+    {
+      "source": "tinydb/table.py::FUNCTION_SIGNATURE::Table.update",
+      "target": "dev_a_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Tc09 broke dev_a_completion@INTEGRATION"
+    },
+    {
+      "source": "tinydb/table.py::FUNCTION_SIGNATURE::Table.update",
+      "target": "testing_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Tc09 broke testing_completion@INTEGRATION"
+    },
+    {
+      "source": "tinydb/table.py::FUNCTION_SIGNATURE::Table.update_multiple",
+      "target": "dev_a_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Tc10 broke dev_a_completion@INTEGRATION"
+    },
+    {
+      "source": "tinydb/table.py::FUNCTION_SIGNATURE::Table.update_multiple",
+      "target": "dev_b_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Tc10 broke dev_b_completion@INTEGRATION"
+    },
+    {
+      "source": "tinydb/table.py::FUNCTION_SIGNATURE::Table.update_multiple",
+      "target": "testing_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Tc10 broke testing_completion@INTEGRATION"
+    },
+    {
+      "source": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.allow_unknown",
+      "target": "dev_a_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Cc03 broke dev_a_completion@INTEGRATION"
+    },
+    {
+      "source": "cerberus/validator.py",
+      "target": "dev_a_completion",
+      "relation_type": "ARTIFACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "FILE",
+      "note": "oracle: Cc03 broke dev_a_completion@INTEGRATION"
+    },
+    {
+      "source": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.allow_unknown",
+      "target": "dev_b_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Cc03 broke dev_b_completion@INTEGRATION"
+    },
+    {
+      "source": "cerberus/validator.py",
+      "target": "dev_b_completion",
+      "relation_type": "ARTIFACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "FILE",
+      "note": "oracle: Cc03 broke dev_b_completion@INTEGRATION"
+    },
+    {
+      "source": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.allow_unknown",
+      "target": "testing_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Cc03 broke testing_completion@INTEGRATION"
+    },
+    {
+      "source": "cerberus/validator.py",
+      "target": "testing_completion",
+      "relation_type": "ARTIFACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "FILE",
+      "note": "oracle: Cc03 broke testing_completion@INTEGRATION"
+    },
+    {
+      "source": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.require_all",
+      "target": "dev_a_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Cc04 broke dev_a_completion@INTEGRATION"
+    },
+    {
+      "source": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.require_all",
+      "target": "testing_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Cc04 broke testing_completion@INTEGRATION"
+    },
+    {
+      "source": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.errors",
+      "target": "dev_a_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Cc05 broke dev_a_completion@INTEGRATION"
+    },
+    {
+      "source": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.errors",
+      "target": "dev_b_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Cc05 broke dev_b_completion@INTEGRATION"
+    },
+    {
+      "source": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.errors",
+      "target": "testing_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Cc05 broke testing_completion@INTEGRATION"
+    },
+    {
+      "source": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.is_child",
+      "target": "dev_a_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Cc07 broke dev_a_completion@INTEGRATION"
+    },
+    {
+      "source": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.is_child",
+      "target": "dev_b_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Cc07 broke dev_b_completion@INTEGRATION"
+    },
+    {
+      "source": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.is_child",
+      "target": "testing_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Cc07 broke testing_completion@INTEGRATION"
+    },
+    {
+      "source": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.purge_readonly",
+      "target": "dev_a_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Cc09 broke dev_a_completion@INTEGRATION"
+    },
+    {
+      "source": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.purge_readonly",
+      "target": "testing_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Cc09 broke testing_completion@INTEGRATION"
+    },
+    {
+      "source": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.root_allow_unknown",
+      "target": "dev_a_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Cc10 broke dev_a_completion@INTEGRATION"
+    },
+    {
+      "source": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.root_allow_unknown",
+      "target": "dev_b_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Cc10 broke dev_b_completion@INTEGRATION"
+    },
+    {
+      "source": "cerberus/validator.py::FUNCTION_SIGNATURE::BareValidator.root_allow_unknown",
+      "target": "testing_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Cc10 broke testing_completion@INTEGRATION"
+    },
+    {
+      "source": "boltons/iterutils.py::FUNCTION_SIGNATURE::split",
+      "target": "dev_a_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Bc07 broke dev_a_completion@INTEGRATION"
+    },
+    {
+      "source": "boltons/iterutils.py",
+      "target": "dev_a_completion",
+      "relation_type": "ARTIFACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "FILE",
+      "note": "oracle: Bc07 broke dev_a_completion@INTEGRATION"
+    },
+    {
+      "source": "boltons/iterutils.py::FUNCTION_SIGNATURE::split",
+      "target": "testing_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Bc07 broke testing_completion@INTEGRATION"
+    },
+    {
+      "source": "boltons/iterutils.py",
+      "target": "testing_completion",
+      "relation_type": "ARTIFACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "FILE",
+      "note": "oracle: Bc07 broke testing_completion@INTEGRATION"
+    },
+    {
+      "source": "boltons/iterutils.py::FUNCTION_SIGNATURE::lstrip",
+      "target": "dev_a_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Bc09 broke dev_a_completion@INTEGRATION"
+    },
+    {
+      "source": "boltons/iterutils.py::FUNCTION_SIGNATURE::lstrip",
+      "target": "testing_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Bc09 broke testing_completion@INTEGRATION"
+    },
+    {
+      "source": "boltons/iterutils.py::FUNCTION_SIGNATURE::lstrip_iter",
+      "target": "dev_a_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Bc10 broke dev_a_completion@INTEGRATION"
+    },
+    {
+      "source": "boltons/iterutils.py::FUNCTION_SIGNATURE::lstrip_iter",
+      "target": "testing_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Bc10 broke testing_completion@INTEGRATION"
+    },
+    {
+      "source": "toolz/itertoolz.py::FUNCTION_SIGNATURE::groupby",
+      "target": "dev_a_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Tc03 broke dev_a_completion@INTEGRATION"
+    },
+    {
+      "source": "toolz/itertoolz.py",
+      "target": "dev_a_completion",
+      "relation_type": "ARTIFACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "FILE",
+      "note": "oracle: Tc03 broke dev_a_completion@INTEGRATION"
+    },
+    {
+      "source": "toolz/itertoolz.py::FUNCTION_SIGNATURE::groupby",
+      "target": "testing_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Tc03 broke testing_completion@INTEGRATION"
+    },
+    {
+      "source": "toolz/itertoolz.py",
+      "target": "testing_completion",
+      "relation_type": "ARTIFACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "FILE",
+      "note": "oracle: Tc03 broke testing_completion@INTEGRATION"
+    },
+    {
+      "source": "toolz/itertoolz.py::FUNCTION_SIGNATURE::merge_sorted",
+      "target": "dev_a_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Tc04 broke dev_a_completion@INTEGRATION"
+    },
+    {
+      "source": "toolz/itertoolz.py::FUNCTION_SIGNATURE::merge_sorted",
+      "target": "testing_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Tc04 broke testing_completion@INTEGRATION"
+    },
+    {
+      "source": "toolz/itertoolz.py::FUNCTION_SIGNATURE::interleave",
+      "target": "dev_a_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Tc05 broke dev_a_completion@INTEGRATION"
+    },
+    {
+      "source": "toolz/itertoolz.py::FUNCTION_SIGNATURE::interleave",
+      "target": "dev_b_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Tc05 broke dev_b_completion@INTEGRATION"
+    },
+    {
+      "source": "toolz/itertoolz.py",
+      "target": "dev_b_completion",
+      "relation_type": "ARTIFACT->COMPLETION",
+      "scope": [
+        "BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "FILE",
+      "note": "oracle: Tc05 broke dev_b_completion@INTEGRATION"
+    },
+    {
+      "source": "toolz/itertoolz.py::FUNCTION_SIGNATURE::interleave",
+      "target": "testing_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Tc05 broke testing_completion@INTEGRATION"
+    },
+    {
+      "source": "toolz/itertoolz.py::FUNCTION_SIGNATURE::take",
+      "target": "dev_a_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Tc09 broke dev_a_completion@INTEGRATION"
+    },
+    {
+      "source": "toolz/itertoolz.py::FUNCTION_SIGNATURE::take",
+      "target": "testing_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Tc09 broke testing_completion@INTEGRATION"
+    },
+    {
+      "source": "toolz/itertoolz.py::FUNCTION_SIGNATURE::tail",
+      "target": "dev_a_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Tc10 broke dev_a_completion@INTEGRATION"
+    },
+    {
+      "source": "toolz/itertoolz.py::FUNCTION_SIGNATURE::tail",
+      "target": "dev_b_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Tc10 broke dev_b_completion@INTEGRATION"
+    },
+    {
+      "source": "toolz/itertoolz.py::FUNCTION_SIGNATURE::tail",
+      "target": "testing_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Tc10 broke testing_completion@INTEGRATION"
+    },
+    {
+      "source": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.items",
+      "target": "dev_a_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Pc03 broke dev_a_completion@INTEGRATION"
+    },
+    {
+      "source": "pyparsing/results.py",
+      "target": "dev_a_completion",
+      "relation_type": "ARTIFACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "FILE",
+      "note": "oracle: Pc03 broke dev_a_completion@INTEGRATION"
+    },
+    {
+      "source": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.items",
+      "target": "testing_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Pc03 broke testing_completion@INTEGRATION"
+    },
+    {
+      "source": "pyparsing/results.py",
+      "target": "testing_completion",
+      "relation_type": "ARTIFACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "FILE",
+      "note": "oracle: Pc03 broke testing_completion@INTEGRATION"
+    },
+    {
+      "source": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.haskeys",
+      "target": "dev_a_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Pc04 broke dev_a_completion@INTEGRATION"
+    },
+    {
+      "source": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.haskeys",
+      "target": "testing_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "POTENTIALLY_BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Pc04 broke testing_completion@INTEGRATION"
+    },
+    {
+      "source": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.pop",
+      "target": "dev_a_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Pc05 broke dev_a_completion@INTEGRATION"
+    },
+    {
+      "source": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.pop",
+      "target": "dev_b_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Pc05 broke dev_b_completion@INTEGRATION"
+    },
+    {
+      "source": "pyparsing/results.py",
+      "target": "dev_b_completion",
+      "relation_type": "ARTIFACT->COMPLETION",
+      "scope": [
+        "BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "FILE",
+      "note": "oracle: Pc05 broke dev_b_completion@INTEGRATION"
+    },
+    {
+      "source": "pyparsing/results.py::FUNCTION_SIGNATURE::ParseResults.pop",
+      "target": "testing_completion",
+      "relation_type": "CONTRACT->COMPLETION",
+      "scope": [
+        "BREAKING"
+      ],
+      "confidence": 1.0,
+      "provenance": "MANUAL",
+      "granularity": "CONTRACT",
+      "note": "oracle: Pc05 broke testing_completion@INTEGRATION"
+    }
+  ]
+}

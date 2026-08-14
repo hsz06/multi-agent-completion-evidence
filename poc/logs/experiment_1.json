@@ -1,0 +1,20 @@
+{
+  "backend": "VERIFIED",
+  "frontend": "VERIFIED",
+  "testing": "VERIFIED",
+  "global_completion": "VERIFIED",
+  "hidden_integration": {
+    "result": "FAILED",
+    "consumed_fields": [
+      "name"
+    ],
+    "schema_fields": [
+      "age",
+      "username"
+    ],
+    "missing_fields": [
+      "name"
+    ]
+  },
+  "global_false_completion": true
+}

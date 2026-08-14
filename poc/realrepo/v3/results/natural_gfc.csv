@@ -1,0 +1,16 @@
+trajectory_source,regime,repo,n_trajectories,exposure_count,stale_claim_count,missed_stale_count,gfc_count,stale_claim_rate,missed_stale_rate,gfcr
+simulated_agent,LOCAL,tinydb,9,27,5,0,2,0.1852,0.0,0.2222
+simulated_agent,LOCAL,cerberus,10,30,7,0,6,0.2333,0.0,0.6
+simulated_agent,LOCAL,boltons,10,30,0,0,3,0.0,0.0,0.3
+simulated_agent,LOCAL,toolz,9,27,5,0,2,0.1852,0.0,0.2222
+simulated_agent,LOCAL,pyparsing,10,30,5,0,0,0.1667,0.0,0.0
+simulated_agent,MODULE,tinydb,9,27,9,0,0,0.3333,0.0,0.0
+simulated_agent,MODULE,cerberus,10,30,11,0,6,0.3667,0.0,0.6
+simulated_agent,MODULE,boltons,10,30,3,0,0,0.1,0.0,0.0
+simulated_agent,MODULE,toolz,9,27,9,0,0,0.3333,0.0,0.0
+simulated_agent,MODULE,pyparsing,10,30,7,0,0,0.2333,0.0,0.0
+simulated_agent,INTEGRATION,tinydb,9,27,12,0,0,0.4444,0.0,0.0
+simulated_agent,INTEGRATION,cerberus,10,30,16,0,4,0.5333,0.0,0.4
+simulated_agent,INTEGRATION,boltons,10,30,6,0,0,0.2,0.0,0.0
+simulated_agent,INTEGRATION,toolz,9,27,12,0,0,0.4444,0.0,0.0
+simulated_agent,INTEGRATION,pyparsing,10,30,7,0,0,0.2333,0.0,0.0

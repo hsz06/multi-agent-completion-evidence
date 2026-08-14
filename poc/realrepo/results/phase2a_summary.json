@@ -1,0 +1,42 @@
+{
+  "all_downstream": {
+    "precision": 0.25,
+    "recall": 1.0,
+    "f1": 0.4,
+    "false_invalidation_rate": 1.0,
+    "missed_invalidation_rate": 0.0,
+    "revalidation_count": 32,
+    "global_false_completion_rate": 0.125,
+    "n_cases": 16
+  },
+  "static": {
+    "precision": 0.4211,
+    "recall": 1.0,
+    "f1": 0.5926,
+    "false_invalidation_rate": 0.4583,
+    "missed_invalidation_rate": 0.0,
+    "revalidation_count": 19,
+    "global_false_completion_rate": 0.125,
+    "n_cases": 16
+  },
+  "freshness": {
+    "precision": 0.4211,
+    "recall": 1.0,
+    "f1": 0.5926,
+    "false_invalidation_rate": 0.4583,
+    "missed_invalidation_rate": 0.0,
+    "revalidation_count": 19,
+    "global_false_completion_rate": 0.125,
+    "n_cases": 16
+  },
+  "change_aware": {
+    "precision": 0.6667,
+    "recall": 1.0,
+    "f1": 0.8,
+    "false_invalidation_rate": 0.1667,
+    "missed_invalidation_rate": 0.0,
+    "revalidation_count": 12,
+    "global_false_completion_rate": 0.125,
+    "n_cases": 16
+  }
+}

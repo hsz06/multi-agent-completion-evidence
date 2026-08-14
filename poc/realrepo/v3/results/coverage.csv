@@ -1,0 +1,16 @@
+regime,repo,gfcr_full_graph,n_badcases,recovered,recovery_fix_rate,verify_runtime_s
+LOCAL,tinydb,0.2,2,2,1.0,11.859
+LOCAL,cerberus,0.6,7,7,1.0,14.027
+LOCAL,boltons,0.3,3,3,1.0,5.263
+LOCAL,toolz,0.2,2,2,1.0,11.859
+LOCAL,pyparsing,0.0,1,1,1.0,8.122
+MODULE,tinydb,0.2,2,2,1.0,16.466
+MODULE,cerberus,0.6,7,7,1.0,18.52
+MODULE,boltons,0.3,3,3,1.0,7.516
+MODULE,toolz,0.2,2,2,1.0,16.466
+MODULE,pyparsing,0.0,1,1,1.0,10.221
+INTEGRATION,tinydb,0.0,0,0,0.0,20.257
+INTEGRATION,cerberus,0.4,4,4,1.0,66.255
+INTEGRATION,boltons,0.0,0,0,0.0,15.141
+INTEGRATION,toolz,0.0,0,0,0.0,20.257
+INTEGRATION,pyparsing,0.0,0,0,0.0,69.969

@@ -1,0 +1,8 @@
+variant,n_badcases,recall3,mrr,cf_fix_rate,patch_acceptance_rate,regression_failure_rate,tie_rate
+full,15,0.3333,0.0667,1.0,1.0,0.0267,0.6
+no_static,15,0.3333,0.0667,1.0,1.0,0.0267,0.6
+no_dynamic,15,0.3333,0.0222,1.0,1.0,0.0,1.0
+no_semantic,15,0.3333,0.0333,1.0,1.0,0.0267,1.0
+no_trace,15,0.3333,0.0667,1.0,1.0,0.0267,0.6
+no_cf_gate,15,0.3333,0.0667,1.0,1.0,0.0,0.6
+no_regression_gate,15,0.3333,0.0667,1.0,0.0,0.0267,0.6

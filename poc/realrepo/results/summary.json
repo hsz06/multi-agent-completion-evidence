@@ -1,0 +1,146 @@
+{
+  "phase2a": {
+    "all_downstream": {
+      "precision": 0.25,
+      "recall": 1.0,
+      "f1": 0.4,
+      "false_invalidation_rate": 1.0,
+      "missed_invalidation_rate": 0.0,
+      "revalidation_count": 32,
+      "global_false_completion_rate": 0.125,
+      "n_cases": 16
+    },
+    "static": {
+      "precision": 0.4211,
+      "recall": 1.0,
+      "f1": 0.5926,
+      "false_invalidation_rate": 0.4583,
+      "missed_invalidation_rate": 0.0,
+      "revalidation_count": 19,
+      "global_false_completion_rate": 0.125,
+      "n_cases": 16
+    },
+    "freshness": {
+      "precision": 0.4211,
+      "recall": 1.0,
+      "f1": 0.5926,
+      "false_invalidation_rate": 0.4583,
+      "missed_invalidation_rate": 0.0,
+      "revalidation_count": 19,
+      "global_false_completion_rate": 0.125,
+      "n_cases": 16
+    },
+    "change_aware": {
+      "precision": 0.6667,
+      "recall": 1.0,
+      "f1": 0.8,
+      "false_invalidation_rate": 0.1667,
+      "missed_invalidation_rate": 0.0,
+      "revalidation_count": 12,
+      "global_false_completion_rate": 0.125,
+      "n_cases": 16
+    }
+  },
+  "phase2b": {
+    "r10": {
+      "n_badcases": 11,
+      "edge_recall1": 1.0,
+      "edge_recall3": 1.0,
+      "edge_recall5": 1.0,
+      "precision5": 0.5909,
+      "mrr": 1.0,
+      "counterfactual_fix_rate": 1.0,
+      "patch_acceptance_rate": 0.7273,
+      "regression_failure_rate": 0.1818,
+      "false_invalidation_rate": 0.0563
+    },
+    "r20": {
+      "n_badcases": 11,
+      "edge_recall1": 1.0,
+      "edge_recall3": 1.0,
+      "edge_recall5": 1.0,
+      "precision5": 0.5909,
+      "mrr": 1.0,
+      "counterfactual_fix_rate": 1.0,
+      "patch_acceptance_rate": 0.7273,
+      "regression_failure_rate": 0.1818,
+      "false_invalidation_rate": 0.0563
+    },
+    "r30": {
+      "n_badcases": 11,
+      "edge_recall1": 1.0,
+      "edge_recall3": 1.0,
+      "edge_recall5": 1.0,
+      "precision5": 0.5909,
+      "mrr": 1.0,
+      "counterfactual_fix_rate": 1.0,
+      "patch_acceptance_rate": 0.7273,
+      "regression_failure_rate": 0.1818,
+      "false_invalidation_rate": 0.0563
+    }
+  },
+  "ablation": {
+    "full": {
+      "n": 33,
+      "recall3": 1.0,
+      "counterfactual_fix_rate": 1.0,
+      "patch_acceptance_rate": 0.7273,
+      "regression_failure_rate": 0.1818
+    },
+    "no_static": {
+      "n": 33,
+      "recall3": 1.0,
+      "counterfactual_fix_rate": 1.0,
+      "patch_acceptance_rate": 0.7273,
+      "regression_failure_rate": 0.1818
+    },
+    "no_dynamic": {
+      "n": 33,
+      "recall3": 1.0,
+      "counterfactual_fix_rate": 1.0,
+      "patch_acceptance_rate": 0.7273,
+      "regression_failure_rate": 0.1818
+    },
+    "no_semantic": {
+      "n": 33,
+      "recall3": 1.0,
+      "counterfactual_fix_rate": 0.1818,
+      "patch_acceptance_rate": 0.1818,
+      "regression_failure_rate": 0.8182
+    },
+    "no_trace": {
+      "n": 33,
+      "recall3": 1.0,
+      "counterfactual_fix_rate": 1.0,
+      "patch_acceptance_rate": 0.7273,
+      "regression_failure_rate": 0.1818
+    },
+    "no_cf_gate": {
+      "n": 33,
+      "recall3": 1.0,
+      "counterfactual_fix_rate": 1.0,
+      "patch_acceptance_rate": 1.0,
+      "regression_failure_rate": 0.0
+    }
+  },
+  "coverage_sensitivity": {
+    "LOW": {
+      "regime": "LOW",
+      "config": "base",
+      "gfcr": 0.3333,
+      "n_cases": 6,
+      "n_badcases": 3,
+      "recovered": 3,
+      "recovery_rate": 1.0
+    },
+    "HIGH": {
+      "regime": "HIGH",
+      "config": "extended",
+      "gfcr": 0.0,
+      "n_cases": 6,
+      "n_badcases": 3,
+      "recovered": 3,
+      "recovery_rate": 1.0
+    }
+  }
+}

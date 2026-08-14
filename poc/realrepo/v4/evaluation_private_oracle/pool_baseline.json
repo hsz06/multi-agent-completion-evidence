@@ -1,0 +1,207 @@
+{
+  "tinydb": {
+    "tests/test_tinydb.py": {
+      "result": "PASS",
+      "duration_s": 0.817,
+      "tests_failed": 0
+    },
+    "tests/test_utils.py": {
+      "result": "PASS",
+      "duration_s": 0.459,
+      "tests_failed": 0
+    },
+    "tests/test_tables.py": {
+      "result": "PASS",
+      "duration_s": 0.569,
+      "tests_failed": 0
+    },
+    "tests/test_operations.py": {
+      "result": "PASS",
+      "duration_s": 0.452,
+      "tests_failed": 0
+    },
+    "tests/test_queries.py": {
+      "result": "PASS",
+      "duration_s": 0.497,
+      "tests_failed": 0
+    },
+    "tests/test_storages.py": {
+      "result": "PASS",
+      "duration_s": 0.492,
+      "tests_failed": 0
+    },
+    "tests/test_middlewares.py": {
+      "result": "PASS",
+      "duration_s": 0.476,
+      "tests_failed": 0
+    }
+  },
+  "cerberus": {
+    "cerberus/tests/test_utils.py": {
+      "result": "PASS",
+      "duration_s": 0.202,
+      "tests_failed": 0
+    },
+    "cerberus/tests/test_validation.py": {
+      "result": "PASS",
+      "duration_s": 0.404,
+      "tests_failed": 0
+    },
+    "cerberus/tests/test_registries.py": {
+      "result": "PASS",
+      "duration_s": 0.193,
+      "tests_failed": 0
+    },
+    "cerberus/tests/test_errors.py": {
+      "result": "PASS",
+      "duration_s": 0.227,
+      "tests_failed": 0
+    },
+    "cerberus/tests/test_schema.py": {
+      "result": "PASS",
+      "duration_s": 0.196,
+      "tests_failed": 0
+    },
+    "cerberus/tests/test_assorted.py": {
+      "result": "PASS",
+      "duration_s": 0.185,
+      "tests_failed": 0
+    },
+    "cerberus/tests/test_legacy.py": {
+      "result": "FAIL",
+      "duration_s": 0.166,
+      "tests_failed": -1
+    },
+    "cerberus/tests/test_customization.py": {
+      "result": "PASS",
+      "duration_s": 0.177,
+      "tests_failed": 0
+    },
+    "cerberus/tests/test_normalization.py": {
+      "result": "PASS",
+      "duration_s": 0.228,
+      "tests_failed": 0
+    }
+  },
+  "boltons": {
+    "tests/test_typeutils.py": {
+      "result": "PASS",
+      "duration_s": 0.158,
+      "tests_failed": 0
+    },
+    "tests/test_iterutils.py": {
+      "result": "PASS",
+      "duration_s": 0.271,
+      "tests_failed": 0
+    },
+    "tests/test_funcutils.py": {
+      "result": "PASS",
+      "duration_s": 0.689,
+      "tests_failed": 0
+    },
+    "tests/test_strutils.py": {
+      "result": "PASS",
+      "duration_s": 0.215,
+      "tests_failed": 0
+    },
+    "tests/test_formatutils.py": {
+      "result": "PASS",
+      "duration_s": 0.158,
+      "tests_failed": 0
+    },
+    "tests/test_listutils.py": {
+      "result": "PASS",
+      "duration_s": 0.226,
+      "tests_failed": 0
+    },
+    "tests/test_dictutils.py": {
+      "result": "PASS",
+      "duration_s": 0.21,
+      "tests_failed": 0
+    },
+    "tests/test_setutils.py": {
+      "result": "PASS",
+      "duration_s": 0.197,
+      "tests_failed": 0
+    },
+    "tests/test_cacheutils.py": {
+      "result": "PASS",
+      "duration_s": 0.203,
+      "tests_failed": 0
+    },
+    "tests/test_jsonutils.py": {
+      "result": "PASS",
+      "duration_s": 0.169,
+      "tests_failed": 0
+    }
+  },
+  "toolz": {
+    "toolz/tests/test_itertoolz.py": {
+      "result": "PASS",
+      "duration_s": 0.26,
+      "tests_failed": 0
+    },
+    "toolz/tests/test_functoolz.py": {
+      "result": "PASS",
+      "duration_s": 0.284,
+      "tests_failed": 0
+    },
+    "toolz/tests/test_dicttoolz.py": {
+      "result": "PASS",
+      "duration_s": 0.282,
+      "tests_failed": 0
+    },
+    "toolz/tests/test_recipes.py": {
+      "result": "PASS",
+      "duration_s": 0.198,
+      "tests_failed": 0
+    },
+    "toolz/tests/test_curried.py": {
+      "result": "PASS",
+      "duration_s": 0.239,
+      "tests_failed": 0
+    },
+    "toolz/tests/test_compatibility.py": {
+      "result": "PASS",
+      "duration_s": 0.193,
+      "tests_failed": 0
+    },
+    "toolz/tests/test_signatures.py": {
+      "result": "PASS",
+      "duration_s": 0.215,
+      "tests_failed": 0
+    },
+    "toolz/tests/test_utils.py": {
+      "result": "PASS",
+      "duration_s": 0.21,
+      "tests_failed": 0
+    }
+  },
+  "pyparsing": {
+    "tests/test_simple_unit.py": {
+      "result": "PASS",
+      "duration_s": 0.355,
+      "tests_failed": 0
+    },
+    "tests/test_util.py": {
+      "result": "PASS",
+      "duration_s": 2.44,
+      "tests_failed": 0
+    },
+    "tests/test_testing.py": {
+      "result": "PASS",
+      "duration_s": 0.2,
+      "tests_failed": 0
+    },
+    "tests/test_pep8_converter.py": {
+      "result": "PASS",
+      "duration_s": 0.254,
+      "tests_failed": 0
+    },
+    "tests/test_pre_pep8_deprecation_warnings.py": {
+      "result": "PASS",
+      "duration_s": 0.34,
+      "tests_failed": 0
+    }
+  }
+}
